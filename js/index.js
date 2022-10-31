@@ -1,9 +1,15 @@
+ymaps.ready(init);
+function init(){
+  var myMap = new ymaps.Map("map", {
+      center: [55.76, 37.64],
+      zoom: 7
+  });
+};
 // choices
 const element = document.querySelector('.filter__selection');
 const choices = new Choices(element, {
   searchEnabled: false,
 });
-
 // gallery swiper
 const swiper = new Swiper('.gallery__swiper', {
   slidesPerView: 'auto',
@@ -16,7 +22,6 @@ const swiper = new Swiper('.gallery__swiper', {
     prevEl: '.swiper-button-prev',
   },
 });
-
 // events swiper
 const eventsSwiper = new Swiper('.events__swiper', {
   slidesPerView: 'auto',
@@ -27,15 +32,11 @@ const eventsSwiper = new Swiper('.events__swiper', {
     prevEl: '.events__swiper-button-prev',
   },
 });
-
 //partners swiper
-
 const partnersSlider = new Slider('.partners__swiper', {
   slidesPerView: 3,
   navigation: {
     nextEl: '.partners__swiper-button-next',
     prevEl: '.partners__swiper-button-prev',
   },
-
-})
-
+});
