@@ -64,3 +64,12 @@ body {
   padding: 0 10px;
 }
 
+.events__item {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+.event__img {
+  max-width: 100%;
+}

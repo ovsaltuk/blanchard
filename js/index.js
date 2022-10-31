@@ -16,4 +16,17 @@ const swiper = new Swiper('.swiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-})
+});
+
+// events swiper
+const eventsSwiper = new Swiper('.events__swiper', {
+  containerModifierClass: 'events__swiper-',
+  slidesPerView: 'auto',
+  spaceBetween: 50,
+  wrapperClass: 'events__swiper-wrapper',
+  navigation: {
+    nextEl: '.events__swiper-button-next',
+    prevEl: '.events__swiper-button-prev',
+  },
+});
+
