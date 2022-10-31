@@ -4,10 +4,9 @@ const choices = new Choices(element, {
   searchEnabled: false,
 });
 
-// swiper
-const swiper = new Swiper('.swiper', {
-  slidesPerView: 3,
-  slidesPerGroup: 3,
+// gallery swiper
+const swiper = new Swiper('.gallery__swiper', {
+  slidesPerView: 'auto',
   pagination: {
     el: '.swiper-pagination',
     type: 'fraction',
@@ -20,7 +19,6 @@ const swiper = new Swiper('.swiper', {
 
 // events swiper
 const eventsSwiper = new Swiper('.events__swiper', {
-  containerModifierClass: 'events__swiper-',
   slidesPerView: 'auto',
   spaceBetween: 50,
   wrapperClass: 'events__swiper-wrapper',
@@ -29,4 +27,15 @@ const eventsSwiper = new Swiper('.events__swiper', {
     prevEl: '.events__swiper-button-prev',
   },
 });
+
+//partners swiper
+
+const partnersSlider = new Slider('.partners__swiper', {
+  slidesPerView: 3,
+  navigation: {
+    nextEl: '.partners__swiper-button-next',
+    prevEl: '.partners__swiper-button-prev',
+  },
+
+})
 
