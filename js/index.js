@@ -1,16 +1,18 @@
 ymaps.ready(init);
 function init(){
   var myMap = new ymaps.Map("map", {
-      center: [55.76, 37.64],
-      zoom: 7
+      center: [55.758468, 37.601088],
+      zoom: 15
   });
 };
+
 // choices
 const element = document.querySelector('.filter__selection');
 const choices = new Choices(element, {
   searchEnabled: false,
 });
 // gallery swiper
+
 const swiper = new Swiper('.gallery__swiper', {
   slidesPerView: 'auto',
   pagination: {
@@ -22,6 +24,7 @@ const swiper = new Swiper('.gallery__swiper', {
     prevEl: '.swiper-button-prev',
   },
 });
+
 // events swiper
 const eventsSwiper = new Swiper('.events__swiper', {
   slidesPerView: 'auto',
@@ -32,8 +35,9 @@ const eventsSwiper = new Swiper('.events__swiper', {
     prevEl: '.events__swiper-button-prev',
   },
 });
+
 //partners swiper
-const partnersSlider = new Slider('.partners__swiper', {
+const partnersSlider = new Swiper('.partners__swiper', {
   slidesPerView: 3,
   navigation: {
     nextEl: '.partners__swiper-button-next',
