@@ -13,8 +13,8 @@ const choices = new Choices(element, {
 });
 // gallery swiper
 
-const swiper = new Swiper('.gallery__swiper', {
-  slidesPerView: 'auto',
+const gallerySwiper = new Swiper('.gallery__swiper', {
+  slidesPerView: 3,
   pagination: {
     el: '.swiper-pagination',
     type: 'fraction',
@@ -27,7 +27,7 @@ const swiper = new Swiper('.gallery__swiper', {
 
 // events swiper
 const eventsSwiper = new Swiper('.events__swiper', {
-  slidesPerView: 'auto',
+  slidesPerView: 3,
   spaceBetween: 50,
   wrapperClass: 'events__swiper-wrapper',
   navigation: {
