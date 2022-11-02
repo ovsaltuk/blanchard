@@ -10,6 +10,7 @@ function init(){
 const element = document.querySelector('.filter__selection');
 const choices = new Choices(element, {
   searchEnabled: false,
+  itemSelectText: '',
 });
 // gallery swiper
 

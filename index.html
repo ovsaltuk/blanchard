@@ -5,6 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blanchard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="icon" href="img/icons/favicon.svg">
   <link rel="stylesheet" href="libs/normalize.css">
   <link rel="stylesheet" href="libs/choices/style/choices.min.css">
@@ -114,7 +117,7 @@
               </ul>
             </li>
           </ul>
-          <div action="get" class="searching-form" aria-label="Поиск по сайту">
+          <form action="get" class="searching-form" aria-label="Поиск по сайту">
             <button class="reset-btn searching-form__btn">
               <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"/>
@@ -122,7 +125,7 @@
               </svg>
             </button>
             <input type="search" class="searching-form__input" placeholder="Поиск по сайту">
-          </div>
+          </form>
         </div>
       </div>
     </header>
@@ -130,7 +133,7 @@
       <div class="container hero__container">
         <h1 class="hero__title">Прикоснитесь к прекрасному</h1>
         <p class="hero__text">Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений</p>
-        <a href="#" class="reset-link hero__btn">Подписаться на рассылку</a>
+        <a href="#" class="reset-link hero__btn button">Подписаться на рассылку</a>
       </div>
     </section>
   </div>
@@ -138,14 +141,14 @@
     
     <section class="about">
       <div class="container about__container">
-        <h2 class="about__title">О нас</h2>
+        <h2 class="about__title" aria-label="Раздел о нас">О нас</h2>
         <p class="about__text">Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и&nbsp;ресурсов. Не&nbsp;следует, однако, забывать, что высококачественный прототип будущего проекта влечёт за&nbsp;собой процесс внедрения и&nbsp;модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в&nbsp;производственный план целого ряда внеочередных мероприятий с&nbsp;учётом комплекса распределения внутренних резервов и&nbsp;ресурсов. В&nbsp;рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определённых слоёв населения, а&nbsp;значит, должны быть разоблачены.</p>
       </div>
     </section>
     <section class="gallery">
       <div class="container gallery__container">
         <div class="filter gallery__filter">
-            <h3 class="filter__title">Галерея</h3>
+            <h3 class="gallery__title" aria-label="галерея">Галерея</h3>
             <span class="filter__heading">Фильтр:</span>
             <select name="filter"  class="filter__selection">
               <option value="" class="filter__selection-item">Живопись</option>
