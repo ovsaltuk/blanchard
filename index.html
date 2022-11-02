@@ -155,63 +155,78 @@
               <option value="" class="filter__selection-item">Рисунок</option>
               <option value="" class="filter__selection-item">Скульптура</option>
             </select>
-            <label class="filter__checkbox-label"><input type="checkbox" class="filter__checkbox">XIX век</label>
-            <label class="filter__checkbox-label"><input type="checkbox" class="filter__checkbox">XX век</label>
-            <label class="filter__checkbox-label"><input type="checkbox" class="filter__checkbox">Современность</label>
+            <div class="gallery__checkbox-container">
+              <label class="filter__checkbox-label"><input type="checkbox" class="filter__checkbox">XIX век</label>
+              <label class="filter__checkbox-label"><input type="checkbox" class="filter__checkbox">XX век</label>
+              <label class="filter__checkbox-label"><input type="checkbox" class="filter__checkbox">Современность</label>
+            </div>
         </div>
         <div class="gallery__swapper-container">
+          <div class="gallery__swiper-btns-cont">
+            <div class="gallery__swiper-btn-prev swiper-button-prev">
+              <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 1L6 6L1 1" stroke="white"/>
+                </svg>
+                
+            </div>
+            <div class="gallery__swiper-paginator swiper-pagination"></div>
+            <div class="gallery__swiper-btn-next swiper-button-next">
+              <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 1L6 6L1 1" stroke="white"/>
+              </svg>                
+            </div>
+          </div>
           <div class="swiper gallery__swiper">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide">
                 <picture>
-                  <img src="img/gallery/galley-img-1-1920.jpg" alt="картина" class="gallery__img">
+                  <img src="img/gallery/gallery-img-1-1920.jpg" alt="картина" class="gallery__img">
                 </picture>
                   <span class="gallery__lense display-none"></span>
               </div>
               <div class="swiper-slide">
                 <picture>
-                  <img src="img/gallery/galley-img-2-1920.jpg" alt="картина" class="gallery__img">
+                  <img src="img/gallery/gallery-img-2-1920.jpg" alt="картина" class="gallery__img">
                 </picture>
                   <span class="gallery__lense display-none"></span>
               </div>
               <div class="swiper-slide">
                 <picture>
-                  <img src="img/gallery/galley-img-3-1920.jpg" alt="картина" class="gallery__img">
+                  <img src="img/gallery/gallery-img-3-1920.jpg" alt="картина" class="gallery__img">
                 </picture>
                   <span class="gallery__lense display-none"></span>
               </div>
               <div class="swiper-slide">
                 <picture>
-                  <img src="img/gallery/galley-img-4-1920.jpg" alt="картина" class="gallery__img">
+                  <img src="img/gallery/gallery-img-4-1920.jpg" alt="картина" class="gallery__img">
                 </picture>
                   <span class="gallery__lense display-none"></span>
               </div>
               <div class="swiper-slide">
                 <picture>
-                  <img src="img/gallery/galley-img-5-1920.jpg" alt="картина" class="gallery__img">
+                  <img src="img/gallery/gallery-img-5-1920.jpg" alt="картина" class="gallery__img">
                 </picture>
                   <span class="gallery__lense display-none"></span>
               </div>
               <div class="swiper-slide">
                 <picture>
-                  <img src="img/gallery/galley-img-6-1920.jpg" alt="картина" class="gallery__img">
+                  <img src="img/gallery/gallery-img-6-1920.jpg" alt="картина" class="gallery__img">
                 </picture>
                   <span class="gallery__lense display-none"></span>
               </div>
             </div>
             <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
+            
             <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            
           </div>
         </div>
       </div>
     </section>
     <section class="catalogue">
-      <div class="container">
+      <div class="container catalogue__container">
         <div class="catalogue__description">
           <h3 class="catalogue__title">Каталог</h3>
           <p class="catalogue__text">Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и&nbsp;морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и&nbsp;по&nbsp;сей день остаются уделом либералов, которые жаждут быть функционально разнесены на&nbsp;независимые элементы.</p>
@@ -223,7 +238,7 @@
       </div>
     </section>
     <section class="events">
-      <div class="container">    
+      <div class="container ">    
         <div class="swiper events__swiper">
           <div class="swiper-wrapper events__swiper-wrapper">
             <div class="swiper-slide events__swiper-slide event events__item">

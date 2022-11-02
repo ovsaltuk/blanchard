@@ -16,6 +16,7 @@ const choices = new Choices(element, {
 
 const gallerySwiper = new Swiper('.gallery__swiper', {
   slidesPerView: 3,
+  spaceBetween: 50,
   pagination: {
     el: '.swiper-pagination',
     type: 'fraction',
@@ -45,3 +46,4 @@ const partnersSlider = new Swiper('.partners__swiper', {
     prevEl: '.partners__swiper-button-prev',
   },
 });
+
