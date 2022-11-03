@@ -263,7 +263,7 @@ h1, h2, h3, h4, p {
 .gallery__container {
   display: flex;
   padding-top: 80px;
-  padding-bottom: 74px;
+  padding-bottom: 75px;
 }
 
 .gallery__title {
@@ -324,8 +324,6 @@ h1, h2, h3, h4, p {
   border-radius: 6px;
 }
 
-element {
-}
 .choices__list--dropdown 
 .choices__item--selectable.is-highlighted, 
 .choices__list[aria-expanded] 
@@ -346,12 +344,15 @@ element {
   flex-direction: column;
 }
 
-.filter__checkbox {
-  display: none;
-}
 
 .gallery__checkbox-container {
   padding-bottom: 5px;
+}
+
+.checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
 }
 
 .filter__checkbox-label {
@@ -364,7 +365,7 @@ element {
   cursor: pointer;
 }
 
-.filter__checkbox-label::after {
+.checkbox__square {
   content: "";
   position: absolute;
   top: 10px;
@@ -374,17 +375,24 @@ element {
   border: 1px solid var(--white-text);
 }
 
-.filter__checkbox-label::before {
+.checkbox__square::before {
   content: "";
   position: absolute;
-  left: 5px;
-  top: 15px;
-  display: block;
+  left: 4px;
+  top: 4px;
+  display: none;
   width: 4px;
   height: 4px;
   border-radius: 50%;
   background-color: var(--btn-color);
-  opacity: 0;
+}
+
+.checkbox:checked + .checkbox__square::before {
+  display: block;
+}
+
+.checkbox:checked + .checkbox__square {
+  border-color: var(--btn-color);
 }
 
 
