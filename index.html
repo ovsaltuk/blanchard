@@ -5,9 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blanchard</title>
+  <link rel="stylesheet" href="libs/accordion/accordion.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="icon" href="img/icons/favicon.svg">
   <link rel="stylesheet" href="libs/normalize.css">
   <link rel="stylesheet" href="libs/choices/style/choices.min.css">
@@ -241,13 +242,94 @@
           <p class="catalogue__text">Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и&nbsp;морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и&nbsp;по&nbsp;сей день остаются уделом либералов, которые жаждут быть функционально разнесены на&nbsp;независимые элементы.</p>
         </div>
         <div class="catalogue__content">
-          <div class="catalogue__tabs"></div>
-          <div class="catalogue__accordion"></div>
+          <div class="catalogue__tabs">
+            <div class="tabs__item" data-target="artist-1">
+              <picture>
+                <img src="img/catalogue/no-artist-img-1920.png" class="tabs__item-img" alt="Domenico Ghirlandaio">
+              </picture>
+              <h3 class="tabs__item-title">Что мы&nbsp;о&nbsp;нём знаем?</h3>
+              <span class="tabs__item-years-of-live"></span>
+              <p class="tabs__item-description">
+                Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
+              </p>
+              <a href="#" class="tabs__item-link">В галерею</a>
+            </div>
+
+            <div class="tabs__item tabs__item--active" data-target="artist-12">
+              <picture>
+                <img src="img/catalogue/catalogue-img-1-1920.jpg" class="tabs__item-img" alt="Domenico Ghirlandaio">
+              </picture>
+              <h3 class="tabs__item-title">Доменико Гирландайо</h3>
+              <span class="tabs__item-years-of-live">2&nbsp;июня 1448&ndash;11 января 1494</span>
+              <p class="tabs__item-description">
+                Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и&nbsp;сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в&nbsp;течение года овладевал профессиональными навыками. Автор фресковых циклов, в&nbsp;которых выпукло, со&nbsp;всевозможными подробностями показана домашняя жизнь библейских персонажей (в&nbsp;их&nbsp;роли выступают знатные граждане Флоренции в&nbsp;костюмах того времени).
+              </p>
+
+            </div>
+
+            
+          </div>
+          <ul class="catalogue__accordion reset-list tabs__list">
+            <li class="ac tabs__list-item">
+              <h2 class="ac-header tabs__list-item-title">
+                <button type="button" class="ac-trigger tabs__item-trigger">C&nbsp;1400 по&nbsp;1499&nbsp;гг 
+                  <span class="tabs__item-trigger-arrow">
+                    <svg width="18" height="12" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11 1L6 6L1 1"/>
+                    </svg>                      
+                  </span>
+                </button>
+                <ul class="ac-panel tabs__list-panel reset-list">
+                  <li class="ac-text"><button class="reset-btn tabs__nav-btn" data-path="artist-1">Бенедетто ди Биндо</button></li>
+                  <li class="ac-text"><button class="reset-btn tabs__nav-btn" data-path="artist-2">Бергоньоне, Амброджо</button></li>
+                  <li class="ac-text"><button class="reset-btn tabs__nav-btn" data-path="artist-3">Биссоло, Франческо</button></li>
+                  <li class="ac-text"><button class="reset-btn tabs__nav-btn" data-path="artist-4">Больтраффио, Джованни</button></li>
+                  <li class="ac-text"><button class="reset-btn tabs__nav-btn" data-path="artist-5">Бонсиньори, Франческо</button></li>
+                  <li class="ac-text"><button class="reset-btn tabs__nav-btn" data-path="artist-6">Боттичини, Рафаэлло</button></li>
+                  <li class="ac-text"><button class="reset-btn tabs__nav-btn" data-path="artist-7">Брамантино</button></li>
+                  <li class="ac-text"><button class="reset-btn tabs__nav-btn" data-path="artist-8">Бреа, Людовико</button></li>
+                  <li class="ac-text"><button class="reset-btn tabs__nav-btn" data-path="artist-9">Бьяджо д’Антонио Туччи</button></li>
+                  <li class="ac-text"><button class="reset-btn tabs__nav-btn" data-path="artist-10">Веккьетта</button></li>
+                  <li class="ac-text"><button class="reset-btn tabs__nav-btn" data-path="artist-11">Андреа Верроккьо</button></li>
+                  <li class="ac-text"><button class="reset-btn tabs__nav-btn tabs__nav-btn--active" data-path="artist-12">Доменико Гирландайо</button></li>
+                  <li class="ac-text"><button class="reset-btn tabs__nav-btn" data-path="artist-13">Беноццо Гоццоли</button></li>
+                  <li class="ac-text"><button class="reset-btn tabs__nav-btn" data-path="artist-14">Граначчи, Франческо</button></li>
+                  <li class="ac-text"><button class="reset-btn tabs__nav-btn" data-path="artist-15">Грегорио ди Чекко</button></li>
+                  <li class="ac-text"><button class="reset-btn tabs__nav-btn" data-path="artist-16">Джованни да Удине</button></li>
+                  <li class="ac-text"><button class="reset-btn tabs__nav-btn" data-path="artist-17">Джованни ди Паоло</button></li>
+                  <li class="ac-text"><button class="reset-btn tabs__nav-btn" data-path="artist-18">Джорджоне</button></li>
+                  <li class="ac-text"><button class="reset-btn tabs__nav-btn" data-path="artist-19">Парентино, Бернардо</button></li>
+                  <li class="ac-text"><button class="reset-btn tabs__nav-btn" data-path="artist-20">Пезеллино</button></li>
+                  <li class="ac-text"><button class="reset-btn tabs__nav-btn" data-path="artist-21">Пьетро Перуджино</button></li>
+                  <li class="ac-text"><button class="reset-btn tabs__nav-btn" data-path="artist-22">Перуцци, Бальдассаре</button></li>
+                  <li class="ac-text"><button class="reset-btn tabs__nav-btn" data-path="artist-23">Пизанелло</button></li>
+                  <li class="ac-text"><button class="reset-btn tabs__nav-btn" data-path="artist-24">Пинтуриккьо</button></li>
+                </ul>
+              </h2>
+            </li>
+
+            <li class="ac tabs__list-item">
+              <h2 class="ac-header tabs__list-item-title">
+                <button type="button" class="ac-trigger tabs__item-trigger">C&nbsp;1400 по&nbsp;1499&nbsp;гг 
+                  <span class="tabs__item-trigger-arrow">
+                    <svg width="18" height="12" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11 1L6 6L1 1"/>
+                    </svg>                      
+                  </span>
+                </button>
+                <ul class="ac-panel tabs__list-panel reset-list">
+                  
+                </ul>
+              </h2>
+            </li>
+            
+          </ul>
         </div>
       </div>
     </section>
     <section class="events">
-      <div class="container ">    
+      <div class="container event__container">
+        <h2 class="events__title">События</h2>    
         <div class="swiper events__swiper">
           <div class="swiper-wrapper events__swiper-wrapper">
             <div class="swiper-slide events__swiper-slide event events__item">
@@ -412,6 +494,7 @@
     </footer>
 
   </main>
+  <script src="libs/accordion/accordion.min.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="libs/choices/js/choices.min.js"></script>

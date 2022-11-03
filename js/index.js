@@ -47,3 +47,28 @@ const partnersSlider = new Swiper('.partners__swiper', {
   },
 });
 
+
+
+//tabs catalogue
+
+let tabsNavBtn = document.querySelectorAll('.tabs__nav-btn');
+let tabsItem = document.querySelectorAll('.tabs__item');
+
+tabsNavBtn.forEach(function(element){
+  element.addEventListener('click', function(e){
+    const path = e.currentTarget.dataset.path;
+
+    tabsNavBtn.forEach(function(btn){btn.classList.remove('tabs__nav-btn--active')});
+    e.currentTarget.classList.add('tabs__nav-btn--active');
+
+    tabsItem.forEach(function(element){element.classList.remove('tabs__item--active')});
+    document.querySelector(`[data-target="${path}"]`).classList.add('tabs__item--active');
+
+  });
+});
+
+//accordion catalogue
+
+new Accordion('.catalogue__accordion');
+
+
