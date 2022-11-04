@@ -33,8 +33,8 @@ const eventsSwiper = new Swiper('.events__swiper', {
   spaceBetween: 50,
   wrapperClass: 'events__swiper-wrapper',
   navigation: {
-    nextEl: '.events__swiper-button-next',
-    prevEl: '.events__swiper-button-prev',
+    nextEl: '.events__swiper-btn-next',
+    prevEl: '.events__swiper-btn-prev',
   },
 });
 
