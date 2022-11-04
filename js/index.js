@@ -41,9 +41,11 @@ const eventsSwiper = new Swiper('.events__swiper', {
 //partners swiper
 const partnersSlider = new Swiper('.partners__swiper', {
   slidesPerView: 3,
+  spaceBetween: 50,
+  // centeredSlides: true,
   navigation: {
-    nextEl: '.partners__swiper-button-next',
-    prevEl: '.partners__swiper-button-prev',
+    nextEl: '.partners__swiper-btn-next',
+    prevEl: '.partners__swiper-btn-prev',
   },
 });
 

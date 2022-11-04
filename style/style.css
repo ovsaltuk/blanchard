@@ -790,7 +790,7 @@ h1, h2, h3, h4, p {
   font-size: 10px;
   color: var(--white-text);
   border-radius: 50%;
-  background-color: var(--gray);
+  background-color:#ECECEC;
 }
 
 .swiper-button-prev.events__swiper-btn-prev {
@@ -809,6 +809,7 @@ h1, h2, h3, h4, p {
 
 .projects__container {
   padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .projects__title {
@@ -829,9 +830,64 @@ h1, h2, h3, h4, p {
 }
 
 .projects__subtitle {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
   color: var(--mine-shaft);
+}
+
+.swiper-slide.partners__slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  padding: 32px 0;
+  border: 1px solid #CACACA
+}
+
+.swiper.partners__swiper {
+  max-width: 1445px;
+  padding: 1px 30px;
+}
+
+.partners__swiper-container {
+  position: relative;
+}
+
+.partners__swiper-btn-next.swiper-button-next::after,
+.partners__swiper-btn-prev.swiper-button-prev::after {
+  display: none;
+  justify-content: center;
+  align-items: end;
+  width: 30px;
+  height: 30px;
+  font-size: 10px;
+  color: var(--white-text);
+  border-radius: 50%;
+  background-color: #ECECEC;
+}
+
+.partners__swiper-btn-prev,
+.partners__swiper-btn-next {
+  width: 30px;
+  height: 30px;
+  font-size: 10px;
+  color: var(--white-text);
+  border-radius: 50%;
+  background-color:#ECECEC;
+}
+
+.swiper-button-prev.partners__swiper-btn-prev {
+  position: absolute;
+  left: 0;
+  top: 53.5%;
+  transform: rotate(90deg);
+}
+
+.swiper-button-next.partners__swiper-btn-next {
+  position: absolute;
+  right: 0;
+  top: 53.5%;
+  transform: rotate(-90deg);
 }
