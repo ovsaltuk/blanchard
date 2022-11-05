@@ -177,11 +177,16 @@ h1, h2, h3, h4, p {
 .art-directions__list {
   position: absolute;
   top: 46px;
+  display: none;
   height: 220px;
   width: 220px;
   overflow-y: auto;
   padding: 40px;
   background: rgba(0, 0, 0, 0.5);
+}
+
+.art-directions__list--active {
+  display: block;
 }
 
 .simplebar-scrollbar {
@@ -228,10 +233,11 @@ h1, h2, h3, h4, p {
   margin-right: 97px;
 }
 
-.submenu__name {
+.submenu__item-btn {
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
+  color: var(--white-text);
 }
 
 .searching-form {

@@ -82,4 +82,29 @@ tabsNavBtn.forEach(function(element){
 
 new Accordion('.catalogue__accordion');
 
+//submenu
+
+let submenuBtn = document.querySelectorAll('.submenu__item-btn');
+
+submenuBtn.forEach(function(el){
+  el.addEventListener('click', function(){
+    el.parentNode.querySelector('.art-directions__list').classList.toggle('art-directions__list--active');
+  })
+});
+
+window.onclick = function(event) {  
+  if (!event.target.matches('.submenu__item-btn')) {  
+    let dropdowns = document.getElementsByClassName("art-directions__list");  
+    let i;  
+    for (i = 0; i < dropdowns.length; i++) {  
+      let openDropdown = dropdowns[i];  
+      if (openDropdown.classList.contains('art-directions__list--active')) {  
+        openDropdown.classList.remove('art-directions__list--active');  
+      }  
+    }  
+  }  
+}  
+
+
+
 
