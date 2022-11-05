@@ -1,3 +1,4 @@
+// yandex map
 ymaps.ready(init);
 function init(){
   var myMap = new ymaps.Map("map", {
@@ -85,6 +86,7 @@ new Accordion('.catalogue__accordion');
 //submenu
 
 let submenuBtn = document.querySelectorAll('.submenu__item-btn');
+let artDirectionLists = document.querySelectorAll('.art-directions__list');
 
 submenuBtn.forEach(function(el){
   el.addEventListener('click', function(){
@@ -103,7 +105,22 @@ window.onclick = function(event) {
       }  
     }  
   }  
-}  
+};
+
+//scroll to anchor
+
+const smoothLinks = document.querySelectorAll('a[href^="#"]');
+for (let smoothLink of smoothLinks) {
+    smoothLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        const id = smoothLink.getAttribute('href');
+
+        document.querySelector(id).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+};
 
 
 

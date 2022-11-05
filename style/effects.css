@@ -1,0 +1,56 @@
+:root {
+  --link-focus-bgc-color: #7943A4;
+}
+/* focus */
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+
+.nav__link,
+.enter-btn,
+.submenu__item-btn {
+  position: relative;
+  outline: none;
+  z-index: 2;
+}
+
+.nav__link::after,
+.enter-btn::after,
+.submenu__item-btn::after {
+  content: " ";
+  position: absolute;
+  top: -4px;
+  right: -6px;
+  bottom: -4px;
+  left: -6px;
+  background-color: var(--link-focus-bgc-color);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.enter-btn::after {
+  top: 3px;
+  bottom: 6px;
+}
+
+.submenu__item-btn::after {
+  top: 0;
+}
+
+.nav__link.focus-visible::after,
+.enter-btn.focus-visible::after,
+.submenu__item-btn.focus-visible::after{
+  opacity: 1;
+}
+
+.searching-form__input.focus-visible {
+  border-color: #C283F3;
+}
+
+.art-directions__link.focus-visible .art-directions__link-img{
+  border: 2px solid #9D5CD0;
+  transition: border-color 0.3s ease-in-out;
+}
+
+

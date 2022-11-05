@@ -16,6 +16,8 @@
   <link rel="stylesheet" href="libs/normalize.css">
   <link rel="stylesheet" href="libs/choices/style/choices.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style/media.css">
+  <link rel="stylesheet" href="style/effects.css">
   <link rel="stylesheet" href="style/style.css">
 </head>
 
@@ -28,15 +30,15 @@
           <nav class="nav header__nav">
             <button class="burger-btn reset-btn display-none"></button>
             <ul class="nav__list reset-list">
-              <li class="nav__item"><a href="#" class="reset-link nav__link">О нас</a></li>
-              <li class="nav__item"><a href="#" class="reset-link nav__link">Галерея</a></li>
-              <li class="nav__item"><a href="#" class="reset-link nav__link">Каталог</a></li>
-              <li class="nav__item"><a href="#" class="reset-link nav__link">События</a></li>
-              <li class="nav__item"><a href="#" class="reset-link nav__link">Проекты</a></li>
-              <li class="nav__item"><a href="#" class="reset-link nav__link">Контакты</a></li>
+              <li class="nav__item"><a href="#about" class="reset-link nav__link" aria-label="перейти в раздел о нас">О нас</a></li>
+              <li class="nav__item"><a href="#gallery" class="reset-link nav__link" aria-label="перейти в раздел галерея">Галерея</a></li>
+              <li class="nav__item"><a href="#catalogue" class="reset-link nav__link" aria-label="перейти в раздел каталог">Каталог</a></li>
+              <li class="nav__item"><a href="#events" class="reset-link nav__link" aria-label="перейти в раздел События">События</a></li>
+              <li class="nav__item"><a href="#projects" class="reset-link nav__link" aria-label="перейти в раздел проекты">Проекты</a></li>
+              <li class="nav__item"><a href="#contacts" class="reset-link nav__link" aria-label="перейти в раздел контакты">Контакты</a></li>
             </ul>
           </nav>
-          <button class="reset-btn enter-btn">
+          <button class="reset-btn enter-btn" aria-label="вход в личный кабинет">
             <span><svg width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z"
@@ -51,73 +53,73 @@
         <div class="container submenu__container">
           <ul class="submenu__list reset-list">
             <li class="submenu__item">
-              <button class="reset-btn submenu__item-btn">Реализм <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 1L6 6L1 1" stroke="white" /></svg></button>
-              <ul class="art-directions__list reset-list" data-simplebar>
-                <li class="art-directions__item"><a href="#" class="art-directions__link"><span class="art-directions__link-text">Тинторетто</span><img class="art-directions__link-img"
+              <button class="reset-btn submenu__item-btn" aria-label="раскрыть список ссылок раздела реализм">Реализм <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 1L6 6L1 1" stroke="white" /></svg></button>
+              <ul class="art-directions__list reset-list" data-simplebar aria-label="список художников направления реализм">
+                <li class="art-directions__item"><a href="#" class="reset-link art-directions__link" aria-label="перейти к работам Тинторетто"><span class="art-directions__link-text">Тинторетто</span><img class="art-directions__link-img"
                       src="img/submenu/realism/realism-1.png"></a></li>
-                <li class="art-directions__item"><a href="#" class="art-directions__link"><span class="art-directions__link-text">Фридрих</span><img class="art-directions__link-img"
+                <li class="art-directions__item"><a href="#" class="reset-link art-directions__link" aria-label="перейти к работам фридрих"><span class="art-directions__link-text">Фридрих</span><img class="art-directions__link-img"
                       src="img/submenu/realism/realism-2.png"></a></li>
-                <li class="art-directions__item"><a href="#" class="art-directions__link"><span class="art-directions__link-text">Леонардо</span><img class="art-directions__link-img"
+                <li class="art-directions__item"><a href="#" class="reset-link art-directions__link" aria-label="перейти к работам леонардо"><span class="art-directions__link-text">Леонардо</span><img class="art-directions__link-img"
                       src="img/submenu/realism/realism-3.png"></a></li>
-                <li class="art-directions__item"><a href="#" class="art-directions__link"><span class="art-directions__link-text">Верроккьо</span><img class="art-directions__link-img"
+                <li class="art-directions__item"><a href="#" class="reset-link art-directions__link" aria-label="перейти к работам верроккьо"><span class="art-directions__link-text">Верроккьо</span><img class="art-directions__link-img"
                       src="img/submenu/realism/realism-4.png"></a></li>
               </ul>
             </li>
             <li class="submenu__item">
-              <button class="reset-btn submenu__item-btn">Импрессионизм <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 1L6 6L1 1" stroke="white" /></svg></button>
-              <ul class="art-directions__list  reset-list" data-simplebar>
-                <li class="art-directions__item"><a href="#" class="art-directions__link"><span class="art-directions__link-text">Моне</span><img class="art-directions__link-img"
+              <button class="reset-btn submenu__item-btn" aria-label="раскрыть список ссылок раздела импрессионизм">Импрессионизм <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 1L6 6L1 1" stroke="white" /></svg></button>
+              <ul class="art-directions__list  reset-list" data-simplebar aria-label="список художников направления импрессионизм">
+                <li class="art-directions__item"><a href="#" class="reset-link art-directions__link" aria-label="перейти к работам моне"><span class="art-directions__link-text">Моне</span><img class="art-directions__link-img"
                       src="img/submenu/impressionism/impressionism-1.png"></a></li>
-                <li class="art-directions__item"><a href="#" class="art-directions__link"><span class="art-directions__link-text">Сислей</span><img class="art-directions__link-img"
+                <li class="art-directions__item"><a href="#" class="reset-link art-directions__link" aria-label="перейти к работам сислей"><span class="art-directions__link-text">Сислей</span><img class="art-directions__link-img"
                       src="img/submenu/impressionism/impressionism-2.png"></a></li>
-                <li class="art-directions__item"><a href="#" class="art-directions__link"><span class="art-directions__link-text">Мане</span><img class="art-directions__link-img"
+                <li class="art-directions__item"><a href="#" class="reset-link art-directions__link" aria-label="перейти к работам мане"><span class="art-directions__link-text">Мане</span><img class="art-directions__link-img"
                       src="img/submenu/impressionism/impressionism-3.png"></a></li>
-                <li class="art-directions__item"><a href="#" class="art-directions__link"><span class="art-directions__link-text">Ренуар</span><img class="art-directions__link-img"
+                <li class="art-directions__item"><a href="#" class="reset-link art-directions__link" aria-label="перейти к работам ренуар"><span class="art-directions__link-text">Ренуар</span><img class="art-directions__link-img"
                       src="img/submenu/impressionism/impressionism-4.png"></a></li>
               </ul>
             </li>
             <li class="submenu__item">
-              <button class="reset-btn submenu__item-btn">Постимпрессионизм <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 1L6 6L1 1" stroke="white" /></svg></button>
-              <ul class="art-directions__list  reset-list" data-simplebar>
-                <li class="art-directions__item"><a href="#" class="art-directions__link"><span class="art-directions__link-text">Ван Гог</span><img class="art-directions__link-img"
+              <button class="reset-btn submenu__item-btn" aria-label="раскрыть список ссылок раздела постимпрессионизм">Постимпрессионизм <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 1L6 6L1 1" stroke="white" /></svg></button>
+              <ul class="art-directions__list  reset-list" data-simplebar aria-label="список художников направления постимпрессионизм">
+                <li class="art-directions__item"><a href="#" class="reset-link art-directions__link" aria-label="перейти к работам ван гог"><span class="art-directions__link-text">Ван Гог</span><img class="art-directions__link-img"
                       src="img/submenu/post - impressionism/post - impressionism-1.png"></a></li>
-                <li class="art-directions__item"><a href="#" class="art-directions__link"><span class="art-directions__link-text">Сезанн</span><img class="art-directions__link-img"
+                <li class="art-directions__item"><a href="#" class="reset-link art-directions__link" aria-label="перейти к работам сезанн"><span class="art-directions__link-text">Сезанн</span><img class="art-directions__link-img"
                       src="img/submenu/post - impressionism/post - impressionism-2.png"></a></li>
-                <li class="art-directions__item"><a href="#" class="art-directions__link"><span class="art-directions__link-text">Гоген</span><img class="art-directions__link-img"
+                <li class="art-directions__item"><a href="#" class="reset-link art-directions__link" aria-label="перейти к работам гоген"><span class="art-directions__link-text">Гоген</span><img class="art-directions__link-img"
                       src="img/submenu/post - impressionism/post - impressionism-3.png"></a></li>
-                <li class="art-directions__item"><a href="#" class="art-directions__link"><span class="art-directions__link-text">Сёра</span><img class="art-directions__link-img"
+                <li class="art-directions__item"><a href="#" class="reset-link art-directions__link" aria-label="перейти к работам сёра"><span class="art-directions__link-text">Сёра</span><img class="art-directions__link-img"
                       src="img/submenu/post - impressionism/post - impressionism-4.png"></a></li>
               </ul>
             </li>
             <li class="submenu__item">
-              <button class="reset-btn submenu__item-btn">Авангард <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 1L6 6L1 1" stroke="white" /></svg></button>
-              <ul class="art-directions__list  reset-list" data-simplebar>
-                <li class="art-directions__item"><a href="#" class="art-directions__link"><span class="art-directions__link-text">Кандинский</span><img class="art-directions__link-img"
+              <button class="reset-btn submenu__item-btn" aria-label="раскрыть список ссылок раздела авангард">Авангард <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 1L6 6L1 1" stroke="white" /></svg></button>
+              <ul class="art-directions__list  reset-list" data-simplebar aria-label="список художников направления авангард">
+                <li class="art-directions__item"><a href="#" class="reset-link art-directions__link" aria-label="перейти к работам кандинский"><span class="art-directions__link-text">Кандинский</span><img class="art-directions__link-img"
                       src="img/submenu/avant-garde/avant-garde-1.png"></a></li>
-                <li class="art-directions__item"><a href="#" class="art-directions__link"><span class="art-directions__link-text">Маринетти</span><img class="art-directions__link-img"
+                <li class="art-directions__item"><a href="#" class="reset-link art-directions__link" aria-label="перейти к работам маринетти"><span class="art-directions__link-text">Маринетти</span><img class="art-directions__link-img"
                       src="img/submenu/avant-garde/avant-garde-2.png"></a></li>
-                <li class="art-directions__item"><a href="#" class="art-directions__link"><span class="art-directions__link-text">Малевич</span><img class="art-directions__link-img"
+                <li class="art-directions__item"><a href="#" class="reset-link art-directions__link" aria-label="перейти к работам малевич"><span class="art-directions__link-text">Малевич</span><img class="art-directions__link-img"
                       src="img/submenu/avant-garde/avant-garde-3.png"></a></li>
-                <li class="art-directions__item"><a href="#" class="art-directions__link"><span class="art-directions__link-text">Пикассо</span><img class="art-directions__link-img"
+                <li class="art-directions__item"><a href="#" class="reset-link art-directions__link" aria-label="перейти к работам пикассо"><span class="art-directions__link-text">Пикассо</span><img class="art-directions__link-img"
                       src="img/submenu/avant-garde/avant-garde-4.png"></a></li>
               </ul>
             </li>
             <li class="submenu__item">
-              <button class="reset-btn submenu__item-btn">Футуризм <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 1L6 6L1 1" stroke="white" /></svg></button>
-              <ul class="art-directions__list  reset-list" data-simplebar>
-                <li class="art-directions__item"><a href="#" class="art-directions__link"><span class="art-directions__link-text">Карра</span><img class="art-directions__link-img"
+              <button class="reset-btn submenu__item-btn" aria-label="раскрыть список ссылок раздела футуризм">Футуризм <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 1L6 6L1 1" stroke="white" /></svg></button>
+              <ul class="art-directions__list  reset-list" data-simplebar aria-label="список художников направления футуризм">
+                <li class="art-directions__item"><a href="#" class="reset-link art-directions__link" aria-label="перейти к работам карра"></a>><span class="art-directions__link-text">Карра</span><img class="art-directions__link-img"
                       src="img/submenu/futurism/futurism-1.png"></a></li>
-                <li class="art-directions__item"><a href="#" class="art-directions__link"><span class="art-directions__link-text">Прателла</span><img class="art-directions__link-img"
+                <li class="art-directions__item"><a href="#" class="reset-link art-directions__link" aria-label="перейти к работам прателла"><span class="art-directions__link-text">Прателла</span><img class="art-directions__link-img"
                       src="img/submenu/futurism/futurism-2.png"></a></li>
-                <li class="art-directions__item"><a href="#" class="art-directions__link"><span class="art-directions__link-text">Северини</span><img class="art-directions__link-img"
+                <li class="art-directions__item"><a href="#" class="reset-link art-directions__link" aria-label="перейти к работам северини"><span class="art-directions__link-text">Северини</span><img class="art-directions__link-img"
                       src="img/submenu/futurism/futurism-3.png"></a></li>
-                <li class="art-directions__item"><a href="#" class="art-directions__link"><span class="art-directions__link-text">Балла</span><img class="art-directions__link-img"
+                <li class="art-directions__item"><a href="#" class="reset-link art-directions__link"  aria-label="перейти к работам балла"><span class="art-directions__link-text">Балла</span><img class="art-directions__link-img"
                       src="img/submenu/futurism/futurism-4.png"></a></li>
               </ul>
             </li>
           </ul>
           <form action="get" class="searching-form" aria-label="Поиск по сайту">
-            <button class="reset-btn searching-form__btn">
+            <button class="reset-btn searching-form__btn" aria-label="искать по сайту">
               <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="6.8678" height="1.71695"
                   transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white" />
@@ -126,7 +128,7 @@
                   fill="white" />
               </svg>
             </button>
-            <input type="search" class="searching-form__input" placeholder="Поиск по сайту">
+            <input type="search" class="searching-form__input" placeholder="Поиск по сайту"  aria-label="введите поисковый запрос">
           </form>
         </div>
       </div>
@@ -136,7 +138,7 @@
         <h1 class="hero__title">Прикоснитесь к прекрасному</h1>
         <p class="hero__text">Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных плановых заданий
           создаёт предпосылки для новых предложений</p>
-        <a href="#" class="reset-link hero__btn button">Подписаться на рассылку</a>
+        <a href="#contacts" class="reset-link hero__btn button">Подписаться на рассылку</a>
       </div>
     </section>
   </div>
@@ -144,7 +146,7 @@
 
     <section class="about">
       <div class="container about__container">
-        <h2 class="about__title" aria-label="Раздел о нас">О нас</h2>
+        <h2 class="about__title" id="about" aria-label="Раздел о нас">О нас</h2>
         <p class="about__text">Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно
           определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних
           резервов и&nbsp;ресурсов. Не&nbsp;следует, однако, забывать, что высококачественный прототип будущего проекта
@@ -158,7 +160,7 @@
     <section class="gallery">
       <div class="container gallery__container">
         <div class="filter gallery__filter">
-          <h3 class="gallery__title" aria-label="галерея">Галерея</h3>
+          <h3 class="gallery__title" id="gallery" aria-label="галерея">Галерея</h3>
           <span class="filter__heading">Фильтр:</span>
           <select name="filter" class="filter__selection">
             <option value="" class="filter__selection-item">Живопись</option>
@@ -247,7 +249,7 @@
     <section class="catalogue">
       <div class="container catalogue__container">
         <div class="catalogue__description">
-          <h3 class="catalogue__title">Каталог</h3>
+          <h3 class="catalogue__title" id="catalogue">Каталог</h3>
           <p class="catalogue__text">Акционеры крупнейших компаний, которые представляют собой яркий пример
             континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы
             этики и&nbsp;морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное
@@ -604,7 +606,7 @@
     </section>
     <section class="events">
       <div class="container event__container">
-        <h2 class="events__title">События</h2>
+        <h2 class="events__title" id="events">События</h2>
         <div class="events__swiper-container">
           <div class="swiper-button-prev events__swiper-btn-prev">
             <svg width="18" height="12" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -695,7 +697,7 @@
     </section>
     <section class="projects">
       <div class="projects__container container">
-        <h3 class="projects__title">Проекты</h3>
+        <h3 class="projects__title" id="projects">Проекты</h3>
         <p class="projects__text">Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей
           деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А&nbsp;ещё независимые
           государства смешаны с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершённой неузнаваемости, из-за чего
@@ -760,8 +762,8 @@
     <section class="contacts">
       <div class="contacts__wrapper">
         <div class="container contacts__container">
-          
-            <address class="address">
+          <h2 class="contacts__title" aria-label="раздел контакты"></h2>
+            <address class="address" id="contacts">
               <h3 class="address__title">Шоурум №4</h3>
               <span class="address__text">Леонтьевский переулок, дом 5/1</span>
             </address>
@@ -837,6 +839,7 @@
   <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="libs/choices/js/choices.min.js"></script>
+  <script src="libs/focus-visible/focus-visible.js"></script>
   <script src="js/index.js"></script>
 </body>
 
