@@ -448,11 +448,11 @@ h1, h2, h3, h4, p {
   background-color: var(--btn-color);
 }
 
-.checkbox:checked + .checkbox__square::before {
+.checkbox:checked ~ .checkbox__square::before {
   display: block;
 }
 
-.checkbox:checked + .checkbox__square {
+.checkbox:checked ~ .checkbox__square {
   border-color: var(--btn-color);
 }
 
@@ -1024,24 +1024,6 @@ h1, h2, h3, h4, p {
   align-items: center;
   padding: 45px 10px;
 }
-
-.contact-links__link.focus-visible svg {
-  filter: opacity(0.5);
-}
-
-.footer__contact-links__link {
-  outline: none;
-}
-
-.footer__contact-links__link svg  {
-  fill: #CACACA;
-}
-
-
-.footer__contact-links__link.focus-visible svg {
-  fill: #fff;
-}
-
 
 
 

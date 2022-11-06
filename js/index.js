@@ -122,6 +122,20 @@ for (let smoothLink of smoothLinks) {
     });
 };
 
+//tultip 
+
+tippy('#tultip-first', {
+  content: 'My tooltip!',
+});
+
+tippy('#tultip-second', {
+  content: 'My tooltip!',
+});
+
+tippy('#tultip-third', {
+  content: 'My tooltip!',
+});
+
 
 
 

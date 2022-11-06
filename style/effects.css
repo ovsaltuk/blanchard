@@ -157,7 +157,34 @@
   transition: border-color 0.3s ease-in-out;
 }
 
+.contact-links__link.focus-visible svg {
+  filter: opacity(0.5);
+}
 
+.footer__contact-links__link {
+  outline: none;
+}
+
+.footer__contact-links__link svg  {
+  fill: #CACACA;
+}
+
+
+.footer__contact-links__link.focus-visible svg {
+  fill: #fff;
+}
+
+.checkbox.focus-visible ~ .checkbox__text {
+  color: #7943A4;
+}
+
+.checkbox.focus-visible ~ .checkbox__square {
+  border-color: #7943A4;
+}
+
+.tultip.focus-visible svg {
+  fill: #D1A9F0;
+}
 
 
 
