@@ -8,7 +8,12 @@
 
 .nav__link,
 .enter-btn,
-.submenu__item-btn {
+.submenu__item-btn,
+.project__text-link,
+.event__link,
+.hero__btn,
+.tabs__item-trigger-text,
+.tabs__nav-btn {
   position: relative;
   outline: none;
   z-index: 2;
@@ -16,7 +21,11 @@
 
 .nav__link::after,
 .enter-btn::after,
-.submenu__item-btn::after {
+.submenu__item-btn::after,
+.project__text-link::after,
+.event__link::after,
+.tabs__item-trigger-text::after,
+.tabs__nav-btn::after {
   content: " ";
   position: absolute;
   top: -4px;
@@ -40,8 +49,16 @@
 
 .nav__link.focus-visible::after,
 .enter-btn.focus-visible::after,
-.submenu__item-btn.focus-visible::after{
+.submenu__item-btn.focus-visible::after,
+.project__text-link.focus-visible::after,
+.event__link.focus-visible::after,
+.hero__btn.focus-visible::after,
+.tabs__nav-btn.focus-visible::after {
   opacity: 1;
+}
+
+.project__text-link.focus-visible {
+  color: #fff;
 }
 
 .searching-form__input.focus-visible {
@@ -52,5 +69,102 @@
   border: 2px solid #9D5CD0;
   transition: border-color 0.3s ease-in-out;
 }
+
+.event__link.focus-visible {
+  color: #fff;
+}
+
+.event__link.focus-visible::before {
+  border-color: #fff;
+}
+
+.hero__btn::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+  border: 2px solid #C283F3;
+  border-radius: 100px;
+  background-color: transparent;
+  opacity: 0;
+}
+
+.swiper-slide {
+  position: relative;
+}
+.swiper-slide.gallery__swiper-slide {
+  outline: none;
+}
+
+.swiper-slide.gallery__swiper-slide::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  bottom: 2px;
+  left: 0;
+  right: 0;
+  border: 3px solid #7943A4;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.swiper-slide.gallery__swiper-slide.focus-visible::before {
+  opacity: 1;
+}
+
+.gallery__swiper-btn-next,
+.gallery__swiper-btn-prev,
+.events__swiper-btn-next,
+.events__swiper-btn-prev,
+.partners__swiper-btn-next,
+.partners__swiper-btn-prev {
+  outline: none;
+}
+
+.gallery__swiper-btn-next.focus-visible,
+.gallery__swiper-btn-prev.focus-visible,
+.events__swiper-btn-next.focus-visible,
+.events__swiper-btn-prev.focus-visible,
+.partners__swiper-btn-next.focus-visible,
+.partners__swiper-btn-prev.focus-visible {
+  border: 2px solid #9D5CD0;
+}
+
+.ac .ac-trigger.tabs__item-trigger {
+  outline: none;
+}
+
+.tabs__item-trigger.focus-visible .tabs__item-trigger-text::after{
+  opacity: 1;
+}
+
+.tabs__item-trigger.focus-visible .tabs__item-trigger-text {
+  color: #fff;
+}
+
+.ac .ac-trigger.tabs__item-trigger.focus-visible .tabs__item-trigger-arrow {
+  background-color: #D1A9F0;
+}
+
+.swiper-slide.partners__slide {
+  outline: none;
+}
+
+.swiper-slide.partners__slide.focus-visible {
+  border-color:#9D5CD0;
+  transition: border-color 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
 
 

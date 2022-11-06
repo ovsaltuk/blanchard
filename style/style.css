@@ -478,8 +478,9 @@ h1, h2, h3, h4, p {
   height: 30px;
   font-size: 10px;
   color: var(--white-text);
+  border: 2px solid var(--gray);
   border-radius: 50%;
-  background-color: var(--gray);
+  
 }
 
 .gallery__swiper-btn-prev {
@@ -488,12 +489,14 @@ h1, h2, h3, h4, p {
 
 .gallery__swiper-btn-prev,
 .gallery__swiper-btn-next {
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   font-size: 10px;
   color: var(--white-text);
+  border: 2px solid var(--gray);
   border-radius: 50%;
   background-color: var(--gray);
+  transition: border-color 0.3s ease-in-out;
 }
 
 .gallery__swiper-btn-prev {
@@ -526,6 +529,11 @@ h1, h2, h3, h4, p {
   font: var(--main-text);
   color: var(--white-text);
 }
+
+/* .gallery__img {
+  outline: none;
+  border: 3px solid transparent;
+} */
 
 .catalogue__container {
   padding-top: 80px;
@@ -812,10 +820,11 @@ h1, h2, h3, h4, p {
   display: none;
   justify-content: center;
   align-items: end;
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   font-size: 10px;
   color: var(--white-text);
+  border: 2px solid #ECECEC;
   border-radius: 50%;
   background-color: #ECECEC;
 }
@@ -884,7 +893,8 @@ h1, h2, h3, h4, p {
   justify-content: center;
   height: auto;
   padding: 32px 0;
-  border: 1px solid #CACACA
+  border: 1px solid #CACACA;
+  filter: grayscale(1);
 }
 
 .swiper.partners__swiper {
@@ -911,11 +921,12 @@ h1, h2, h3, h4, p {
 
 .partners__swiper-btn-prev,
 .partners__swiper-btn-next {
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   font-size: 10px;
   color: var(--white-text);
   border-radius: 50%;
+  border: 2px solid #ECECEC;
   background-color:#ECECEC;
 }
 
@@ -962,6 +973,7 @@ h1, h2, h3, h4, p {
 }
 
 .callback {
+  display: flex;
   margin-right: 80px;
 }
 
@@ -1011,6 +1023,23 @@ h1, h2, h3, h4, p {
   justify-content: space-between;
   align-items: center;
   padding: 45px 10px;
+}
+
+.contact-links__link.focus-visible svg {
+  filter: opacity(0.5);
+}
+
+.footer__contact-links__link {
+  outline: none;
+}
+
+.footer__contact-links__link svg  {
+  fill: #CACACA;
+}
+
+
+.footer__contact-links__link.focus-visible svg {
+  fill: #fff;
 }
 
 
