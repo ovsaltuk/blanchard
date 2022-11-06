@@ -44,6 +44,7 @@
   --tabs-item-border-color-active: #7943A4;
   --tabs-item-border: 1px solid var(--tabs-item-border-color);
   --dusty-gray: #999;
+  --transition-color: color 0.3s ease-in-out;
 }
 
 body {
@@ -138,6 +139,7 @@ h1, h2, h3, h4, p {
   font-size: 18px;
   line-height: 25px;
   color: var(--white-text);
+  transition: var(--transition-color);
 }
 
 .enter-btn {
@@ -146,6 +148,12 @@ h1, h2, h3, h4, p {
   font-size: 18px;
   line-height: 25px;
   color: var(--white-text);
+  transition: var(--transition-color);
+}
+
+.enter-btn span svg path{
+  fill: white;
+  transition: fill 0.3s ease-in-out;
 }
 
 .enter-btn span {
@@ -218,6 +226,7 @@ h1, h2, h3, h4, p {
   width: 220px;
   height: 40px;
   border: 2px solid transparent;
+  transition: border-color 0.3s ease-in-out;
 }
 
 .art-directions__link-text {
@@ -239,6 +248,12 @@ h1, h2, h3, h4, p {
   font-size: 18px;
   line-height: 25px;
   color: var(--white-text);
+  transition: var(--transition-color);
+}
+
+.submenu__item-btn svg path {
+  stroke: var(--white-text);
+  transition: stroke 0.3s ease-in-out;
 }
 
 .searching-form {
@@ -265,6 +280,8 @@ h1, h2, h3, h4, p {
   border-bottom: var(--white-border);
   outline: none;
   background-color: transparent;
+  cursor: pointer;
+  transition: border-color 0.3s ease-in-out;
 }
 
 .searching-form__input::placeholder {
@@ -305,7 +322,7 @@ h1, h2, h3, h4, p {
   line-height: 25px;
   color: var(--white-text);
   background-color: var(--btn-color);
-  border-color: var(--btn-color);
+  border: 3px solid transparent;
 }
 
 .about__container {
@@ -352,12 +369,25 @@ h1, h2, h3, h4, p {
   color: var(--white-text);
 }
 
+.filter__selection {
+  position: relative;
+}
+
+.filter__selection-arrow {
+  position:absolute;
+  top: 40%;
+  right: 5px;
+}
+
 .choices {
   margin-top: 11px;
   margin-bottom: auto;
 }
 
+
+
 .choices__inner {
+  position: relative;
   width: 400px;
   min-height: 0;
   padding: 2px 15px;
@@ -366,6 +396,20 @@ h1, h2, h3, h4, p {
   border: var(--white-border);
   border-radius: 6px;
 }
+ 
+.choices__inner::after {
+  content: "";
+  position: absolute;
+  top: 30%;
+  right: 15px;
+  width: 10px;
+  height: 10px;
+  border: 2px solid white;
+  border-top: transparent;
+  border-left: transparent;
+  transform: rotate(45deg);
+}
+
 
 .choices[data-type*="select-one"] .choices__inner {
   padding-bottom: 4px;
@@ -434,6 +478,7 @@ h1, h2, h3, h4, p {
   width: 12px;
   height: 12px;
   border: 1px solid var(--white-text);
+  transition: border-color 0.3s ease-in-out;
 }
 
 .checkbox__square::before {
@@ -460,6 +505,23 @@ h1, h2, h3, h4, p {
 .gallery__swapper-container {
   padding-top: 18px;
   min-width: 0;
+}
+
+.gallery__swiper-slide {
+  position: relative;
+}
+
+.gallery__lense {
+  position: absolute;
+  top: 25px;
+  bottom: 25px;
+  right: 25px;
+  left: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0
 }
 
 .gallery__swiper-btns-cont {
@@ -597,9 +659,13 @@ h1, h2, h3, h4, p {
 }
 
 .tabs__nav-btn {
+  position: relative;
   font: var(--main-text);
   color: var(--mine-shaft);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease-in-out;
 }
+
 
 .tabs__nav-btn--active {
   color: var(--btn-color);
@@ -631,7 +697,9 @@ h1, h2, h3, h4, p {
   border-bottom: var(--tabs-item-border);
 }
 
-.ac .ac-trigger.tabs__item-trigger 
+.tabs__item-trigger-text {
+  transition: color 0.3s ease-in-out;
+}
 
 .tabs__item-trigger-arrow {
   display: flex;
@@ -803,6 +871,7 @@ h1, h2, h3, h4, p {
   align-self: baseline;
   font: var(--main-text);
   color: var(--btn-color);
+  transition: color 0.3s ease-in-out;
 }
 
 .event__link::before {
@@ -813,6 +882,7 @@ h1, h2, h3, h4, p {
   left: 0;
   right: 1px;
   border-bottom: 1px solid var(--btn-color);
+  transition: border-color 0.3s ease-in-out;
 }
 
 .events__swiper-btn-next.swiper-button-next::after,
@@ -877,6 +947,7 @@ h1, h2, h3, h4, p {
 
 .project__text-link {
   color: var(--btn-color);
+  border-bottom: 1px solid transparent;
 }
 
 .projects__subtitle {
@@ -894,7 +965,13 @@ h1, h2, h3, h4, p {
   height: auto;
   padding: 32px 0;
   border: 1px solid #CACACA;
+  
+}
+
+.partners__slide img {
   filter: grayscale(1);
+  transition: filter .3s ease-in-out;
+
 }
 
 .swiper.partners__swiper {
@@ -986,6 +1063,7 @@ h1, h2, h3, h4, p {
   color: var(--mine-shaft);
   border: 1px solid #333333;
   border-radius: 100px;
+  cursor: pointer;
 }
 
 .callback__btn {
@@ -996,6 +1074,7 @@ h1, h2, h3, h4, p {
   color: var(--btn-color);
   border: 1px solid var(--btn-color);
   border-radius: 100px;
+  transition: all .3s ease-in-out;
 }
 
 .contact-links__title {
@@ -1025,5 +1104,12 @@ h1, h2, h3, h4, p {
   padding: 45px 10px;
 }
 
-
-
+.gallery__swiper-btn-next,
+.gallery__swiper-btn-prev,
+.events__swiper-btn-next,
+.events__swiper-btn-prev,
+.partners__swiper-btn-next,
+.partners__swiper-btn-prev {
+  transition: background-color 0.3s ease-in-out,
+  border-color 0.3s ease-in-out;
+}
