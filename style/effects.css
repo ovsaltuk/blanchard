@@ -356,3 +356,146 @@ button:focus-visible {
 .footer__contact-links__link:hover svg {
   fill: #fff;
 }
+
+/* active */
+
+.nav__link:active {
+  color: #7943A4;
+}
+
+.enter-btn:active {
+  color: #9D5CD0;
+}
+
+.enter-btn:active span svg path{
+  fill: #9D5CD0;
+}
+
+.submenu__item-btn:active {
+  color: #7943A4;
+}
+
+.submenu__item-btn:active svg path {
+  stroke: #7943A4;
+}
+
+.searching-form__input:active {
+  border-color: #7943A4;
+}
+
+.art-directions__link::after {
+  content: " ";
+  position: absolute;
+  top: -25px;
+  bottom: 7px;
+  left: 2px;
+  right: 2px;
+  opacity: 0;
+  background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url(.jpg);;
+}
+
+.art-directions__link:active::after{
+  opacity: 1;
+}
+
+.hero__btn:active {
+  background: #7943A4;
+  border: 3px solid #D1A9F0;
+}
+
+.event__link:active {
+  color: #333333;
+}
+
+.event__link:active::before {
+  border-color: #333333;
+}
+
+.gallery__swiper-btn-next:active,
+.gallery__swiper-btn-prev:active,
+.events__swiper-btn-next:active,
+.events__swiper-btn-prev:active,
+.partners__swiper-btn-next:active,
+.partners__swiper-btn-prev:active {
+  border-color: #9D5CD0;
+}
+
+.gallery__swiper-slide::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 4px;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4));
+}
+
+.gallery__swiper-slide:active::after {
+  opacity: 1;
+}
+
+.tabs__item-trigger:active > .tabs__item-trigger-text  {
+  color: #7943A4;
+}
+
+.tabs__item-trigger:active{
+  border-color: #7943A4;
+}
+
+.tabs__item-trigger:active > .tabs__item-trigger-arrow  {
+  border-color: #7943A4;
+}
+
+.checkbox:checked ~ .checkbox__square::before {
+  display: block;
+}
+
+.checkbox:checked ~ .checkbox__square {
+  border-color: #C283F3;
+}
+
+.checkbox:checked ~ .checkbox__text {
+  color: #C283F3;
+}
+
+.callback__btn:active {
+  background: #7943A4;
+  border: 2px solid #D1A9F0;
+}
+
+.swiper-slide.partners__slide:active {
+  border-color: #9D5CD0;
+}
+
+.contact-links__link:active svg {
+  border-radius: 50%;
+  border: 1px solid #9D5CD0;
+}
+
+.contact-links__link_watsapp:active svg {
+  background: #30BF39;
+}
+
+.contact-links__link_telegram:active svg {
+  background: #26A5E4;
+}
+
+.footer__contact-links__link:active svg {
+  fill: #9D5CD0;
+}
+
+.tultip:active svg {
+  fill: #9D5CD0;
+}
+
+.tultip:active svg path:nth-child(2) {
+  fill: #fff;
+}
+
+.project__text-link:active {
+  color: #7943A4;
+  border-color: #7943A4;
+}
+
+
