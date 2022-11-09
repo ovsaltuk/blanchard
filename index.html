@@ -16,9 +16,9 @@
   <link rel="stylesheet" href="libs/normalize.css">
   <link rel="stylesheet" href="libs/choices/style/choices.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="style/media.css">
   <link rel="stylesheet" href="style/effects.css">
   <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/media.css">
 </head>
 
 <body>
@@ -26,9 +26,20 @@
     <header class="header">
       <div class="menu header__menu">
         <div class="container menu__container">
-          <a class="logo menu__logo"><img src="img/header/logo.svg" alt="Логотип Blanchard" class="logo__img"></a>
+          <a class="logo menu__logo">
+            <picture>
+              <source srcset="img/header/logo-1024.svg" media="(max-width: 1620px)">
+              <img src="img/header/logo.svg" alt="Логотип Blanchard" class="logo__img">
+            </picture>
+          </a> 
           <nav class="nav header__nav">
-            <button class="burger-btn reset-btn display-none"></button>
+            <button class="burger-btn reset-btn display-none">
+              <svg width="36" height="29" viewBox="0 0 36 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="36" height="3.65217" transform="matrix(-1 0 0 1 36 0.700012)" fill="white"/>
+                <path d="M28.2002 12.8739H0.00019455V16.5261H28.2002V12.8739Z" fill="white"/>
+                <path d="M24 25.0479H0V28.7H24V25.0479Z" fill="white"/>
+              </svg>
+            </button>
             <ul class="nav__list reset-list">
               <li class="nav__item"><a href="#about" class="reset-link nav__link" aria-label="перейти в раздел о нас">О
                   нас</a></li>
@@ -52,6 +63,19 @@
             </span>
             Войти
           </button>
+
+          <form action="get" class="searching-form header__searching-form" aria-label="Поиск по сайту">
+            <button class="reset-btn searching-form__btn header__searching-form-btn" aria-label="искать по сайту">
+              <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="9.15446" height="2.28862" transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58105 21.0461)" fill="white"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1246 24.174C10.0376 24.174 5.32763 19.2726 5.32763 13.5104C5.32763 7.74823 10.0376 2.84676 16.1246 2.84676C22.2115 2.84676 26.9215 7.74823 26.9215 13.5104C26.9215 19.2726 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.8721 2.79502 13.5104C2.79502 6.14869 8.76285 0.180847 16.1246 0.180847C23.4863 0.180847 29.4541 6.14869 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z" fill="white"/>
+              </svg>
+            </button>
+            <input type="search" class="searching-form__input header__searching-form-input" placeholder="Поиск по сайту"
+              aria-label="введите поисковый запрос">
+          </form>
+          
+
         </div>
       </div>
       <div class="submenu header__submenu">
@@ -173,7 +197,7 @@
               </ul>
             </li>
           </ul>
-          <form action="get" class="searching-form" aria-label="Поиск по сайту">
+          <form action="get" class="searching-form submenu__searching-form" aria-label="Поиск по сайту">
             <button class="reset-btn searching-form__btn" aria-label="искать по сайту">
               <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="6.8678" height="1.71695"
@@ -830,9 +854,12 @@
                 </div>
               </div>
             </div>
+          
           </div>
         </div>
+        <div class="events__swiper-pagination"></div>
       </div>
+      
     </section>
     <section class="projects">
       <div class="projects__container container">
@@ -891,31 +918,59 @@
             <div class="swiper-wrapper partners__swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide partners__slide" tabindex="0" aria-label="партнер">
-                <img src="img/partners/partner-1.png" alt="" class="partners__img">
+                <picture>
+                  <source srcset="img/partners/partner-1-1024.png" media="(max-width:1620px)">
+                  <img src="img/partners/partner-1.png" alt="" class="partners__img">
+                </picture>
+                
               </div>
               <div class="swiper-slide partners__slide" tabindex="0" aria-label="партнер">
-                <img src="img/partners/partner-2.png" alt="" class="partners__img">
+                <picture>
+                  <source srcset="img/partners/partner-2-1024.png" media="(max-width:1620px)">
+                  <img src="img/partners/partner-2.png" alt="" class="partners__img">
+                </picture>
               </div>
               <div class="swiper-slide partners__slide" tabindex="0" aria-label="партнер">
-                <img src="img/partners/partner-3.png" alt="" class="partners__img">
+                <picture>
+                  <source srcset="img/partners/partner-3-1024.png" media="(max-width:1620px)">
+                  <img src="img/partners/partner-3.png" alt="" class="partners__img">
+                </picture>
               </div>
               <div class="swiper-slide partners__slide" tabindex="0" aria-label="партнер">
-                <img src="img/partners/partner-4.png" alt="" class="partners__img">
+                <picture>
+                  <source srcset="img/partners/partner-4-1024.png" media="(max-width:1620px)">
+                  <img src="img/partners/partner-4.png" alt="" class="partners__img">
+                </picture>
               </div>
               <div class="swiper-slide partners__slide" tabindex="0" aria-label="партнер">
-                <img src="img/partners/partner-5.png" alt="" class="partners__img">
+                <picture>
+                  <source srcset="img/partners/partner-5-1024.png" media="(max-width:1620px)">
+                  <img src="img/partners/partner-5.png" alt="" class="partners__img">
+                </picture>
               </div>
               <div class="swiper-slide partners__slide" tabindex="0" aria-label="партнер">
-                <img src="img/partners/partner-6.png" alt="" class="partners__img">
+                <picture>
+                  <source srcset="img/partners/partner-6-1024.png" media="(max-width:1620px)">
+                  <img src="img/partners/partner-6.png" alt="" class="partners__img">
+                </picture>
               </div>
               <div class="swiper-slide partners__slide" tabindex="0" aria-label="партнер">
-                <img src="img/partners/partner-7.png" alt="" class="partners__img">
+                <picture>
+                  <source srcset="img/partners/partner-7-1024.png" media="(max-width:1620px)">
+                  <img src="img/partners/partner-7.png" alt="" class="partners__img">
+                </picture>
               </div>
               <div class="swiper-slide partners__slide" tabindex="0" aria-label="партнер">
-                <img src="img/partners/partner-8.png" alt="" class="partners__img">
+                <picture>
+                  <source srcset="img/partners/partner-8-1024.png" media="(max-width:1620px)">
+                  <img src="img/partners/partner-8.png" alt="" class="partners__img">
+                </picture>
               </div>
               <div class="swiper-slide partners__slide" tabindex="0" aria-label="партнер">
-                <img src="img/partners/partner-9.png" alt="" class="partners__img">
+                <picture>
+                  <source srcset="img/partners/partner-9-1024.png" media="(max-width:1620px)">
+                  <img src="img/partners/partner-9.png" alt="" class="partners__img">
+                </picture>
               </div>
 
             </div>
@@ -923,6 +978,7 @@
 
           </div>
         </div>
+        
       </div>
     </section>
     <section class="contacts">
@@ -930,7 +986,7 @@
         <div class="container contacts__container">
           <h2 class="contacts__title" aria-label="раздел контакты"></h2>
           <address class="address" id="contacts">
-            <h3 class="address__title">Шоурум №4</h3>
+            <h3 class="address__title">Шоурум № 4</h3>
             <span class="address__text">Леонтьевский переулок, дом 5/1</span>
           </address>
           <form action="post" class="callback">

@@ -25,8 +25,7 @@ const choices = new Choices(element, {
 // gallery swiper
 
 const gallerySwiper = new Swiper('.gallery__swiper', {
-  slidesPerView: 3,
-  spaceBetween: 50,
+  slidesPerView: 'auto',
   pagination: {
     el: '.swiper-pagination',
     type: 'fraction',
@@ -37,10 +36,16 @@ const gallerySwiper = new Swiper('.gallery__swiper', {
   },
 });
 
+
+
 // events swiper
 const eventsSwiper = new Swiper('.events__swiper', {
-  slidesPerView: 3,
-  spaceBetween: 50,
+  pagination: {
+    el: '.events__swiper-pagination',
+    type: 'bullets'
+  },
+  slidesPerView: 'auto',
+  slidesPerGroup: 3,
   wrapperClass: 'events__swiper-wrapper',
   navigation: {
     nextEl: '.events__swiper-btn-next',
@@ -50,9 +55,7 @@ const eventsSwiper = new Swiper('.events__swiper', {
 
 //partners swiper
 const partnersSlider = new Swiper('.partners__swiper', {
-  slidesPerView: 3,
-  spaceBetween: 50,
-  // centeredSlides: true,
+  slidesPerView: 'auto',
   navigation: {
     nextEl: '.partners__swiper-btn-next',
     prevEl: '.partners__swiper-btn-prev',
