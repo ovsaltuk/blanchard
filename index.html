@@ -34,11 +34,9 @@
           </a> 
           <nav class="nav header__nav">
             <button class="burger-btn reset-btn display-none">
-              <svg width="36" height="29" viewBox="0 0 36 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="36" height="3.65217" transform="matrix(-1 0 0 1 36 0.700012)" fill="white"/>
-                <path d="M28.2002 12.8739H0.00019455V16.5261H28.2002V12.8739Z" fill="white"/>
-                <path d="M24 25.0479H0V28.7H24V25.0479Z" fill="white"/>
-              </svg>
+              <span class="burger-brn__line burger-brn__line-top"></span>
+              <span class="burger-brn__line burger-brn__line-middle"></span>
+              <span class="burger-brn__line burger-brn__line-bottom"></span>
             </button>
             <ul class="nav__list reset-list">
               <li class="nav__item"><a href="#about" class="reset-link nav__link" aria-label="перейти в раздел о нас">О
@@ -529,7 +527,7 @@
                 <img src="img/catalogue/catalogue-img-12-1920.jpg" class="tabs__item-img" alt="Domenico Ghirlandaio">
               </picture>
               <h3 class="tabs__item-title">Доменико Гирландайо</h3>
-              <span class="tabs__item-years-of-live">2&nbsp;июня 1448&ndash;11 января 1494</span>
+              <span class="tabs__item-years-of-live">2&nbsp;июня 1448 &ndash; 11 января 1494</span>
               <p class="tabs__item-description">
                 Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
                 продолжили его брат Давид и&nbsp;сын Ридольфо. Глава художественной мастерской, где юный Микеланджело
@@ -787,9 +785,11 @@
                   <source srcset="" media="">
                   <img src="img/events-img/event-img-1-1920.jpg" alt="" class="event__img">
                 </picture>
-                <div class="event__item-content">
+                <div class="event__location-date-container">
                   <span class="event__location">Музей им. Щусева</span>
                   <time class="event__date">с 20 марта по 30 апреля</time>
+                </div>
+                <div class="event__item-content">
                   <h4 class="event__title">Книжная гравюра в&nbsp;живом восприятии</h4>
                   <p class="event__text">Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель
                     художественной династии, которую продолжили его брат Давид и&nbsp;сын Ридольфо</p>
@@ -801,9 +801,11 @@
                   <source srcset="" media="">
                   <img src="img/events-img/event-img-2-1920.jpg" alt="" class="event__img">
                 </picture>
-                <div class="event__item-content">
+                <div class="event__location-date-container">
                   <span class="event__location">ММОМА</span>
                   <time class="event__date">24 марта 19:00</time>
+                </div>
+                <div class="event__item-content">
                   <h4 class="event__title">&laquo;Открытая дискуссия&raquo;. Дмитрий Петров и&nbsp;Сергей Ильин.</h4>
                   <p class="event__text">Высокий уровень вовлечения представителей целевой аудитории является чётким
                     доказательством простого факта</p>
@@ -815,9 +817,12 @@
                   <source srcset="" media="">
                   <img src="img/events-img/event-img-3-1920.jpg" alt="" class="event__img">
                 </picture>
-                <div class="event__item-content">
+                <div class="event__location-date-container">
                   <span class="event__location">Еврейский музей</span>
                   <time class="event__date">с 31 марта по 21 апреля</time>
+                </div>
+                <div class="event__item-content">
+                  
                   <h4 class="event__title">Выставка &laquo;Формация 2020&raquo;</h4>
                   <p class="event__text">Идейные соображения высшего порядка, а&nbsp;также современная методология
                     разработки играет важную роль в&nbsp;формировании глубокомысленных рассуждений</p>
@@ -829,9 +834,12 @@
                   <source srcset="" media="">
                   <img src="img/events-img/event-img-4-1920.jpg" alt="" class="event__img">
                 </picture>
-                <div class="event__item-content">
+                <div class="event__location-date-container">
                   <span class="event__location">ММАМ</span>
                   <time class="event__date">с 8 апреля по 20 мая</time>
+                </div>
+                <div class="event__item-content">
+                  
                   <h4 class="event__title">Джон Винзор. Фотографии из&nbsp;серии &laquo;Метафора&raquo;</h4>
                   <p class="event__text">Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель
                     художественной династии, которую продолжили его брат Давид и&nbsp;сын Ридольфо</p>
@@ -843,9 +851,12 @@
                   <source srcset="" media="">
                   <img src="img/events-img/event-img-5-1920.jpg" alt="" class="event__img">
                 </picture>
-                <div class="event__item-content">
+                <div class="event__location-date-container">
                   <span class="event__location">Третьяковка на&nbsp;Крымском валу</span>
                   <time class="event__date">с&nbsp;30&nbsp;марта по&nbsp;30&nbsp;апреля</time>
+                </div>
+                <div class="event__item-content">
+                  
                   <h4 class="event__title">XXIV Международная биеннале молодого искусства</h4>
                   <p class="event__text">Внезапно, реплицированные с&nbsp;зарубежных источников, современные
                     исследования
@@ -919,56 +930,66 @@
               <!-- Slides -->
               <div class="swiper-slide partners__slide" tabindex="0" aria-label="партнер">
                 <picture>
-                  <source srcset="img/partners/partner-1-1024.png" media="(max-width:1620px)">
+                  <source srcset="img/partners/partner-1-1024.png" media="(min-width:1621px)">
+                  <source srcset="img/partners/partner-1-320.png" media="(max-width:690px)">
                   <img src="img/partners/partner-1.png" alt="" class="partners__img">
                 </picture>
                 
               </div>
               <div class="swiper-slide partners__slide" tabindex="0" aria-label="партнер">
                 <picture>
+                  <source srcset="img/partners/partner-2-320.png" media="(max-width:690px)">
+                  <source srcset="img/partners/partner-2-768.png" media="(max-width:950px)">
                   <source srcset="img/partners/partner-2-1024.png" media="(min-width:951px)">
-                  <source srcset="img/partners/partner-2-768.png" media="(min-width:320px)">
+                 
                   <img src="img/partners/partner-2.png" alt="" class="partners__img">
                 </picture>
               </div>
               <div class="swiper-slide partners__slide" tabindex="0" aria-label="партнер">
                 <picture>
+                  <source srcset="img/partners/partner-3-320.png" media="(max-width:690px)">
                   <source srcset="img/partners/partner-3-1024.png" media="(max-width:1620px)">
                   <img src="img/partners/partner-3.png" alt="" class="partners__img">
                 </picture>
               </div>
               <div class="swiper-slide partners__slide" tabindex="0" aria-label="партнер">
                 <picture>
+                  <source srcset="img/partners/partner-4-320.png" media="(max-width:690px)">
                   <source srcset="img/partners/partner-4-1024.png" media="(max-width:1620px)">
                   <img src="img/partners/partner-4.png" alt="" class="partners__img">
                 </picture>
               </div>
               <div class="swiper-slide partners__slide" tabindex="0" aria-label="партнер">
                 <picture>
+                  <source srcset="img/partners/partner-5-320.png" media="(max-width:690px)">
                   <source srcset="img/partners/partner-5-1024.png" media="(max-width:1620px)">
                   <img src="img/partners/partner-5.png" alt="" class="partners__img">
                 </picture>
               </div>
               <div class="swiper-slide partners__slide" tabindex="0" aria-label="партнер">
                 <picture>
+                  <source srcset="img/partners/partner-6-320.png" media="(max-width:690px)">
                   <source srcset="img/partners/partner-6-1024.png" media="(max-width:1620px)">
                   <img src="img/partners/partner-6.png" alt="" class="partners__img">
                 </picture>
               </div>
               <div class="swiper-slide partners__slide" tabindex="0" aria-label="партнер">
                 <picture>
+                  <source srcset="img/partners/partner-7-320.png" media="(max-width:690px)">
                   <source srcset="img/partners/partner-7-1024.png" media="(max-width:1620px)">
                   <img src="img/partners/partner-7.png" alt="" class="partners__img">
                 </picture>
               </div>
               <div class="swiper-slide partners__slide" tabindex="0" aria-label="партнер">
                 <picture>
+                  <source srcset="img/partners/partner-8-320.png" media="(max-width:690px)">
                   <source srcset="img/partners/partner-8-1024.png" media="(max-width:1620px)">
                   <img src="img/partners/partner-8.png" alt="" class="partners__img">
                 </picture>
               </div>
               <div class="swiper-slide partners__slide" tabindex="0" aria-label="партнер">
                 <picture>
+                  <source srcset="img/partners/partner-9-320.png" media="(max-width:690px)">
                   <source srcset="img/partners/partner-9-1024.png" media="(max-width:1620px)">
                   <img src="img/partners/partner-9.png" alt="" class="partners__img">
                 </picture>
@@ -994,6 +1015,7 @@
             <input type="text" class="callback__input" placeholder="Имя*">
             <input type="tel" class="callback__input" placeholder="Телефон*">
             <button class="callback__btn reset-btn">Заказать обратный звонок</button>
+            <button class="callback__btn callback__btn_small reset-btn">Заказать</button>
           </form>
           <div class="contact-links">
             <h3 class="contact-links__title">Связаться в&nbsp;один клик</h3>
@@ -1031,11 +1053,14 @@
           </div>
         </div>
       </div>
-      <div id="map" style="width: 100%; height: 700px"></div>
+      <div class="map">
+        <div id="map" style="min-width: 100%; min-height: 100%"></div>
+      </div>
+      
     </section>
     <footer class="footer">
       <div class="container footer__container">
-        <a class="logo"><img src="img/header/logo.svg" alt="Логотип Blanchard" class="logo__img"></a>
+        <a class="logo footer__logo"><img src="img/header/logo.svg" alt="Логотип Blanchard" class="logo__img"></a>
         <div class="contact-links footer__contact-links">
           <a href="#" class="footer__contact-links__link" tabindex="0" aria-label="ссылка в контакте">
             <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">

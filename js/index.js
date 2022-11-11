@@ -26,7 +26,7 @@ const choices = new Choices(element, {
 
 const gallerySwiper = new Swiper('.gallery__swiper', {
   slidesPerView: 'auto',
-  slidesPerGroup: 3,
+  // slidesPerGroup: 3,
   pagination: {
     el: '.swiper-pagination',
     type: 'fraction',
@@ -47,7 +47,6 @@ const eventsSwiper = new Swiper('.events__swiper', {
     clickable: true
   },
   slidesPerView: 'auto',
-  slidesPerGroup: 3,
   wrapperClass: 'events__swiper-wrapper',
   navigation: {
     nextEl: '.events__swiper-btn-next',
