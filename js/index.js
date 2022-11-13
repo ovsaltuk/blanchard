@@ -140,6 +140,27 @@ tippy('#tultip-third', {
   content: 'My tooltip!',
 });
 
+//nav header
 
+let burgerBtn = document.querySelector('.burger-btn');
+let navList = document.querySelector('.nav__list');
+let listLinks = document.querySelectorAll('.nav__link');
+let navListEnterBtn = document.querySelector('.nav__list-enter-btn');
 
+burgerBtn.addEventListener('click', function(){
+  burgerBtn.classList.toggle('burger-btn--active'),
+  navList.classList.toggle('nav__list--active')
+});
+
+listLinks.forEach(function(e){
+  e.addEventListener('click', function(){
+    burgerBtn.classList.remove('burger-btn--active'),
+    navList.classList.remove('nav__list--active')
+  })
+});
+
+navListEnterBtn.addEventListener('click', function(){
+  burgerBtn.classList.remove('burger-btn--active'),
+  navList.classList.remove('nav__list--active')
+})
 

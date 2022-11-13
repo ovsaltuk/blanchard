@@ -33,34 +33,111 @@
   .burger-btn {
     position: relative;
     display: block;
-    width: 30px;
+    width: 36px;
+    height: 28px;
+    z-index: 3;
   }
+
+
 
   .burger-brn__line {
     position: absolute;
     left: 0;
     height: 3.65px;
     background: #FFFFFF;
+    opacity: 1;
+    transition: all .3s ease-in-out;
   }
 
   .burger-brn__line-top {
-    top: -16px;
-    width: 36px;
+    top: -1px;
+    width: 100%;
   }
 
   .burger-brn__line-middle {
-    top: -3px;
+    top: 45%;
     width: 28px;
   }
 
   .burger-brn__line-bottom {
-    top: 8px;
+    bottom: 0px;
     width: 24px;
   }
 
+  .burger-btn--active .burger-brn__line-middle {
+    opacity: 0;
+  }
+
+  .burger-btn--active .burger-brn__line-top,
+  .burger-btn--active .burger-brn__line-bottom {
+    width: 36px;
+    transform-origin: left;
+    transition: transform .3s ease-in-out;
+  }
+
+  .burger-btn--active .burger-brn__line-top {
+    transform: rotate(45deg);
+  }
+
+  .burger-btn--active .burger-brn__line-bottom {
+    transform: rotate(-45deg);
+  }
+
   .nav__list {
-    display: none;
-    flex-direction: column;
+    top: -100%;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .nav__list--active {
+    position: absolute;
+    top: 15%;
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    width: auto;
+    height: 100vh;
+    z-index: 2;
+    transition: all .3s ease-in-out;
+  }
+
+  .nav__list--active::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1;
+    transition: all .3s ease-in-out;
+  }
+
+  .nav__list--active .nav__item:not(:last-child){
+    margin-bottom: 25px;
+  }
+
+  .nav__list-enter-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 150px;
+    padding: 20px 88px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #fff;
+    border: 2px solid #9D5CD0;
+    border-radius: 100px;
+    z-index: 3;
+  }
+
+  .nav__list-enter-btn svg {
+    margin-right: 5px;
+    fill: currentColor
   }
 
   .enter-btn {

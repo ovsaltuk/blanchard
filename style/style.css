@@ -331,6 +331,7 @@ h1, h2, h3, h4, p {
   background-color: var(--btn-color);
   border: 3px solid transparent;
   transition: all .3s ease-in-out;
+  z-index: 1;
 }
 
 .about__container {
