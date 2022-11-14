@@ -8,7 +8,6 @@
   }
 
   .menu__container {
-    justify-content: space-between;
     padding-top: 29px;
     padding-bottom: 24px;
   }
@@ -20,14 +19,12 @@
   }
 
   .menu__logo {
+    display: flex;
+    flex-grow: 2;
+    justify-content: end;
+    padding-right: 8.5%;
     margin-right: 0;
     order: 2;
-  }
-
-  .header__searching-form {
-    display: flex;
-    order: 3;
-    padding: 0;
   }
 
   .burger-btn {
@@ -144,19 +141,6 @@
     display: none;
   }
 
-  .header__searching-form {
-    display: flex;
-  }
-
-  .header__searching-form-btn {
-    margin-right: 0;
-  }
-
-  .header__searching-form-input {
-    padding: 0;
-    width: 0px;
-  }
-  
   .header__submenu {
     display: none;
   }
@@ -546,6 +530,7 @@
   }
 
   .menu__container {
+    align-items: flex-start;
     padding-top: 12px;
     padding-bottom: 7px;
   }
@@ -563,29 +548,54 @@
     height: 21.67px;
   }
 
+  .nav__list--active {
+    top: 10%;
+  }
+
+  .nav__list-enter-btn {
+    margin-top: 100px;
+    padding: 11px 45px;
+    font-size: 12px;
+    line-height: 16px;
+}
+
   .burger-brn__line {
     height: 2px;
   }
 
-  .burger-brn__line-top {
-    top: -13px;
+  .burger-btn {
     width: 26px;
+    height: 18px;
   }
 
   .burger-brn__line-middle {
-    top: -4px;
     width: 15px;
   }
 
   .burger-brn__line-bottom {
-    top: 4px;
     width: 10px;
+  }
+
+  .burger-btn--active .burger-brn__line-top,
+  .burger-btn--active .burger-brn__line-bottom {
+    width: 25px;
   }
 
   .header__searching-form-btn svg {
     width: 18px;
     height: 18px;
   }
+
+  .nav__list--active .nav__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  .nav__link {
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+
 
   .hero__container {
     display: flex;
