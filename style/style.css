@@ -831,6 +831,7 @@ h1, h2, h3, h4, p {
 .event__location-date-container {
   display: flex;
   flex-direction: column;
+  margin-bottom: 13px;
   padding: 0 50px;
   padding-top: 8px;
 }
@@ -859,7 +860,6 @@ h1, h2, h3, h4, p {
 }
 
 .event__date {
-  margin-bottom: 13px;
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;

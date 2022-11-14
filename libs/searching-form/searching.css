@@ -132,10 +132,7 @@
 }
 
 @media(max-width:690px) {
-  .menu__container .menu__logo {
-    margin: 0;
-    padding-right: 28%;
-  }
+  
 
   .header__searching-form{
     justify-content: end;

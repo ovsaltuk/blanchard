@@ -182,6 +182,10 @@
     width: 280px;
   }
 
+  .choices__list.choices__list--dropdown.is-active {
+    background-color: black;
+  }
+
   .gallery__swiper-btns-cont {
     margin-bottom: 29px;
   }
@@ -248,6 +252,7 @@
   }
 
   .event__location-date-container {
+    margin-bottom: 3px;
     padding: 0 32px;
     padding-top: 10px;
   }
@@ -539,8 +544,9 @@
     margin-top: -5px;
   }
 
-  .menu__logo {
-    margin-right: 11px;
+  .menu__container .menu__logo {
+    margin: 0;
+    padding-right: 26%;
   }
 
   .logo__img {
@@ -815,10 +821,6 @@
     margin-bottom: 10px;
     padding: 0 17px;
     padding-top: 12px;
-  }
-
-  .event__date {
-    margin-bottom: 0;
   }
 
   .event__item-content {
