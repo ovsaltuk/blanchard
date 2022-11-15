@@ -1054,6 +1054,8 @@ h1, h2, h3, h4, p {
 }
 
 .address {
+  display: flex;
+  flex-direction: column;
   margin-right: 81px;
 }
 
