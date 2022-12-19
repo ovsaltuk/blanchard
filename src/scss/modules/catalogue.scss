@@ -1,0 +1,249 @@
+@import "./var";
+@import "./mixins";
+
+
+
+.catalogue {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  &__title {
+    margin-bottom: 16px;
+    @include fontSectionTitle;
+  }
+  &__text {
+    margin-bottom: 39px;
+    max-width: 69%;
+    @include fontMainText;
+  }
+}
+
+.accordion-tabs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordion{
+  flex-grow: 1;
+  &__ac {
+    margin: 0;
+    border: none;
+    
+    &.is-active > &-header &-trigger > &-trigger-arrow {
+      transform: rotate(180deg);
+    }
+    & .accordion__ac-trigger{
+      @include flexCenter;
+      justify-content: space-between;
+      padding: 0;
+      padding-top: 31px;
+      padding-bottom: 31px;
+      font-family: OpenSans;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 32px;
+      border: 1px solid #CACACA;
+      border-left: none;
+      border-right: none;
+    }
+    & .accordion__ac-trigger::after {
+      display: none;
+    }
+    &.is-active > .accordion__ac-header .accordion__ac-trigger::after{
+      display: none;
+    }
+  }
+
+  &__ac-header {
+    display: flex;
+  }
+  &__ac-trigger-arrow{
+    @include flexCenter;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-color: #ECECEC;
+    box-sizing: border-box;
+    transition: all .3s ease-in-out;
+    &-img {
+      height: 13px;
+      width: 18px;
+      stroke: black;
+    }
+  }
+  &__ac-text {
+    border-top: 1px solid #CACACA;
+    transition: color .3s ease-in-out;
+  }
+  &__ac &__ac-panel &__ac-text {
+    min-height: 284px;
+    columns: 3;
+    column-gap: 30px;
+    padding: 28px 0;
+    // padding-right: 70px;
+  }
+
+
+  &__ac-text-item-btn {
+    @include fontMainText;
+    text-align: left;
+    border-bottom: 1px solid transparent;
+  }
+}
+
+.tabs {
+  display: flex;
+  margin-right: 50px;
+  width: 47%;
+  &__item {
+    display: none;
+  
+  }
+  &__item--active {
+    display: block;
+  }
+  &__img {
+    margin-bottom: 27px;
+    max-width: 100%;
+  }
+  &__item-tittle {
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    color: #333333;
+  }
+  &__item-years {
+    display: inline-block;
+    margin-bottom: 14px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px; 
+    color: #999999;
+  }
+
+  &__item-text {
+    @include fontMainText;
+  }
+
+
+
+
+}
+
+@media (max-width: 1390px) {
+  .catalogue {
+    &__text {
+      max-width: 100%;
+    }
+  }
+
+  .accordion {
+    &__ac &__ac-panel &__ac-text {
+      columns: 2;
+      column-gap: 30px;
+      
+      // padding-right: 70px;
+    }
+  }
+
+  .accordion__ac .accordion__ac-trigger {
+    padding-top: 32px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .accordion-tabs {
+    flex-direction: column;
+  }
+
+  .catalogue {
+    &__text {
+      margin-bottom: 21px;
+    }
+  }
+
+  .tabs {
+    order: 2;
+    width: 100%;
+    &__img {
+      margin-bottom: 18px;
+    }
+    &__item-years {
+      margin-bottom: 5px;
+    }
+  }
+
+  .accordion {
+    margin-bottom: 47px;
+    &__ac &__ac-panel &__ac-text {
+      padding-bottom: 24px;
+      columns: 3;
+      column-gap: 70px;
+      
+      // padding-right: 70px;
+    }
+  }
+
+  .accordion__ac .accordion__ac-trigger {
+    padding: 32px 0;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .catalogue {
+    padding-top: 50px;
+    padding-bottom: 51px;
+    &__title {
+      margin-bottom: 12px;
+      @include fontSectionTitleMob;
+    }
+
+    &__text {
+      display: none;
+    }
+  }
+
+  .accordion {
+    margin-bottom: 50px;
+    &__ac &__ac-panel &__ac-text {
+      columns: 1;
+      column-gap: 0;
+      
+      // padding-right: 70px;
+    }
+  }
+
+  .tabs {
+    &__img {
+      margin-bottom: 15px;
+    }
+    &__item-years {
+      margin-bottom: 12px;
+    }
+  }
+
+  .accordion__ac .accordion__ac-panel .accordion__ac-text{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .accordion__ac-trigger-arrow-img {
+    height: 11px;
+    width: 11px;
+  }
+
+  .accordion__ac .accordion__ac-trigger {
+    padding: 20px 0;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .accordion__ac-trigger-arrow {
+    height: 30px;
+    width: 30px;
+  }
+}

@@ -1,0 +1,166 @@
+.projects {
+  padding-bottom: 76px;
+  &__title {
+    margin-bottom: 16px;
+    @include fontSectionTitle
+  }
+  &__text {
+    margin-bottom: 20px;
+    max-width: 67%;
+    @include fontMainText
+  }
+  &__text-tultip-icon {
+    width: 16px;
+    height: 16px;
+    fill: white;
+    transition: fill .3s ease-in-out ;
+  }
+
+  &__text-link {
+    color: colorBorderBtn;
+  }
+  
+  &__subtitle {
+    margin-bottom: 23px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  &__swiper {
+    padding: 0 15px;
+  }
+
+  &__partners-swiper-wrapper {
+    position: relative;
+    padding: 0 64px;
+  }
+
+  &__swiper-slide {
+    @include flexCenter;
+    justify-content: center;
+    padding: 32px 0;
+    height: auto;
+    border: 1px solid #cacaca;
+    transition: all .3s ease-in-out;
+  }
+
+  &__swiper-slide-img {
+    max-width: 100%;
+    filter: grayscale(1);
+    transition: filter .3s ease-in-out;
+  }
+
+  &__swiper-button-next,
+  &__swiper-button-prev {
+    top: 53.5%;
+    width: 30px;
+    height: 30px;
+    background-color: #ECECEC;
+    border: 2px solid #ECECEC;
+    border-radius: 50%;
+    box-sizing: border-box;
+    transition: all .3s ease-in-out;
+  }
+
+  &__swiper-button-next::after,
+  &__swiper-button-prev::after {
+    font-size: 10px;
+    color: black;
+  }
+
+  &__swiper-button-prev {
+    left: 0;
+  }
+
+  &__swiper-button-next {
+    right: 0;
+  }
+
+  
+}
+
+.tippy-box[data-theme~='blanchard'] {
+  border-radius: 0;
+  background-color: $colorBorderBtn;
+  color: white;
+}
+
+.tippy-box[data-theme~='blanchard'][data-placement^='top'] > .tippy-arrow::before {
+  border-top-color: $colorBorderBtn;
+}
+.tippy-box[data-theme~='blanchard'][data-placement^='bottom'] > .tippy-arrow::before {
+  border-bottom-color: $colorBorderBtn;
+}
+.tippy-box[data-theme~='blanchard'][data-placement^='left'] > .tippy-arrow::before {
+  border-left-color: $colorBorderBtn;
+}
+.tippy-box[data-theme~='toblanchardmato'][data-placement^='right'] > .tippy-arrow::before {
+  border-right-color: $colorBorderBtn;
+}
+
+
+
+@media (max-width: 1390px) {
+  .projects {
+    padding-top: 40px;
+    padding-bottom: 35px;
+    &__text {
+      max-width: 100%;
+    }
+    &__swiper-slide {
+      padding: 21px 0;
+    }
+    &__partners-swiper-wrapper {
+      padding: 0 40px;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .projects {
+    &__text {
+      margin-bottom: 27px;
+    }
+    &__subtitle {
+      margin-bottom: 27px;
+    }
+    &__swiper-slide {
+      padding: 12px 0;
+    }
+    &__swiper-slide-img {
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .projects {
+    padding-top: 0;
+    padding-bottom: 0;
+    &__title {
+      margin-bottom: 12px;
+      @include fontSectionTitleMob;
+    }
+    &__text {
+      margin-bottom: 83px;
+    }
+    &__subtitle {
+      margin-bottom: 11px;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 32px;
+    }
+
+    &__swiper {
+      padding: 0;
+      padding-right: 10px;
+    }
+
+    &__swiper-slide {
+      padding: 15px 0;
+    }
+    
+  }
+}
+

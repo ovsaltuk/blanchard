@@ -1,0 +1,474 @@
+//focus
+
+@media (min-width: 1390px) {
+  .nav__list-link,
+  .submenu__btn,
+  .menu__button,
+  .projects__text-link,
+  .events__swiper-slide-link,
+  .accordion__ac-text-item-btn,
+  .accordion__ac-trigger-text,
+  .banner__link,
+  .dropdown__link,
+  .contacts__form-btn {
+    position: relative;
+    outline: none;
+    z-index: 1;
+  }
+
+  .dropdown__link::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -14px;
+    right: 14px;
+    border: 2px solid $colorBorderBtn;;
+    z-index: -1;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+  }
+
+  .nav__list-link::after,
+  .submenu__btn::after,
+  .menu__button::after,
+  .projects__text-link::after,
+  .events__swiper-slide-link::after,
+  .accordion__ac-text-item-btn::after,
+  .accordion__ac-trigger-text::after {
+    content: '';
+    position: absolute;
+    top: -3px;
+    bottom: -3px;
+    left: -3px;
+    right: -3px;
+    background-color: $colorLinkFocus;
+    z-index: -1;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+  }
+
+  .banner__link::after,
+  .contacts__form-btn::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    bottom: -5px;
+    left: -5px;
+    right: -5px;
+    border: 2px solid $colorCheckbox;
+    border-radius: inherit;
+    z-index: -1;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+  }
+
+  .accordion__ac-text-item-btn::after,
+  .accordion__ac-trigger-text::after,
+  .events__swiper-slide-link::after {
+    background-color: $colorBorderBtn;
+  }
+
+  .accordion__ac-header:focus,
+  .accordion__ac-header:focus-visible,
+  .submenu__btn:focus,
+  .submenu__btn:focus-visible,
+  .menu__button:focus,
+  .menu__button:focus-visible,
+  .accordion__ac-trigger:focus,
+  .accordion__ac-trigger:focus-visible,
+  .accordion__ac-text-item-btn:focus,
+  .accordion__ac-text-item-btn:focus-visible,
+  .contacts__form-btn:focus,
+  .contacts__form-btn:focus-visible,
+  .footer__link:focus,
+  .footer__link:focus-visible,
+  .projects__text-tultip:focus,
+  .projects__text-tultip:focus-visible  {
+    outline: none;
+  }
+
+  .nav__list-link:focus::after,
+  .nav__list-link:focus-visible::after,
+  .menu__button:focus::after,
+  .menu__button:focus-visible::after,
+  .submenu__btn:focus::after,
+  .submenu__btn:focus-visible::after,
+  .accordion__ac-trigger:focus > .accordion__ac-trigger-text::after,
+  .accordion__ac-trigger:focus-visible > .accordion__ac-trigger-text::after,
+  .accordion__ac-text-item-btn:focus::after,
+  .accordion__ac-text-item-btn:focus-visible::after,
+  .events__swiper-slide-link:focus::after,
+  .events__swiper-slide-link:focus-visible::after,
+  .projects__text-link:focus::after,
+  .projects__text-link:focus-visible::after,
+  .banner__link:focus::after,
+  .banner__link:focus-visible:after,
+  .dropdown__link:focus::after,
+  .dropdown__link:focus-visible:after,
+  .contacts__form-btn:focus::after,
+  .contacts__form-btn:focus-visible:after   {
+    opacity: 1;
+  }
+
+  .accordion__ac-trigger:focus > .accordion__ac-trigger-text,
+  .accordion__ac-trigger:focus-visible > .accordion__ac-trigger-text,
+  .accordion__ac-text-item-btn:focus,
+  .accordion__ac-text-item-btn:focus-visible,
+  .events__swiper-slide-link:focus,
+  .events__swiper-slide-link:focus-visible,
+  .projects__text-link:focus,
+  .projects__text-link:focus-visible {
+    color: white;
+  }
+
+  .accordion__ac-trigger:focus > .accordion__ac-trigger-arrow,
+  .accordion__ac-trigger:focus-visible > .accordion__ac-trigger-arrow {
+    background-color: $colorTultipFocus;
+  }
+
+  .gallery__swiper-button-next:focus,
+  .gallery__swiper-button-next:focus,
+  .gallery__swiper-button-next:focus-visible,
+  .gallery__swiper-button-next:focus-visible {
+    border: 2px solid black;
+    outline: none;
+  }
+
+  .projects__swiper-button-next:focus,
+  .projects__swiper-button-next:focus-visible,
+  .projects__swiper-button-prev:focus,
+  .projects__swiper-button-prev:focus-visible {
+    border: 2px solid $colorBorderBtn;
+    outline: none;
+  }
+
+  .submenu__form-input:focus,
+  .submenu__form-input:focus-visible {
+    border-color: $colorCheckbox;
+  }
+
+  .checkbox__input:focus ~ span {
+    color: $colorCheckbox;
+    border-color: $colorCheckbox;
+  }
+
+  .contacts__form-input:focus,
+  .contacts__form-input:focus-visible {
+    background-color: #ECECEC;
+  }
+
+  .socials__link:focus,
+  .socials__link:focus-visible {
+    opacity: .5;
+    outline: none;
+  }
+
+  .projects__swiper-slide:focus,
+  .projects__swiper-slide:focus-visible {
+    border-color: $colorBorderBtn;
+    outline: none;
+  }
+  
+  .footer__link:focus > svg,
+  .footer__link:focus-visible > svg {
+    fill: white;
+  }
+
+  .projects__text-tultip:focus > svg,
+  .projects__text-tultip:focus-visible > svg {
+    fill: $colorTultipFocus;
+  }
+
+  .gallery__swiper-slide:focus,
+  .gallery__swiper-slide:focus-visible {
+    border: 3px solid #7943A4;
+  }
+
+
+ 
+}
+
+//hover
+
+.nav__list-link:hover,
+.menu__button:hover {
+  color: $colorCheckbox;
+}
+
+.menu__button:hover > .menu__button-img {
+  fill: $colorCheckbox;
+}
+
+.submenu__btn:hover {
+  color: $colorBorderBtn;
+}
+
+.submenu__btn:hover::after {
+  opacity: 0;
+}
+
+.submenu__form-input:hover {
+  border-color: $colorBorderBtn;
+}
+
+.banner__link:hover {
+  border-color: $colorTultipFocus;
+}
+
+.dropdown__link:hover::after {
+  opacity: 1;
+}
+
+.gallery__swiper-button-next:hover,
+.gallery__swiper-button-prev:hover {
+  background-color: $colorBorderBtn;
+  border-color: $colorBorderBtn;
+}
+
+.checkbox:hover > span {
+  border-color: $colorCheckbox;
+}
+
+.gallery__swiper-slide {
+  position: relative;
+}
+
+.gallery__swiper-slide-leance{
+  position: absolute;
+  top: 25px;
+  bottom: 25px;
+  left: 25px;
+  right: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+}
+
+.gallery__swiper-slide:hover > .gallery__swiper-slide-leance {
+  opacity: 1;
+}
+
+.accordion__ac-trigger:hover {
+  border-color: $colorBorderBtn;
+}
+
+.accordion__ac-trigger:hover > .accordion__ac-trigger-text {
+  color: $colorBorderBtn;
+}
+
+.accordion__ac-trigger:hover > .accordion__ac-trigger-arrow {
+  background-color: $colorTultipFocus;
+}
+
+.events__swiper-button-next:hover,
+.events__swiper-button-prev:hover {
+  background-color: $colorTultipFocus;
+  border-color: $colorTultipFocus;
+}
+
+.events__swiper-slide-link:hover {
+  color: $colorLinkFocus;
+}
+
+.projects__text-tultip:hover > svg {
+    fill: $colorTultipFocus;
+  }
+
+
+.projects__text-link:hover {
+  color: $colorBorderBtn;
+}
+
+.projects__swiper-slide:hover > picture > .projects__swiper-slide-img {
+  filter: grayscale(0);
+}
+
+.contacts__form-btn:hover,
+.contacts__form-btn_mob:hover {
+  background-color: $colorBorderBtn;
+  color: white;
+}
+
+.contacts__form-input:hover {
+  background-color: #ECECEC;
+}
+
+.socials__link:hover {
+  opacity: .5;
+}
+
+.footer__link:hover > svg {
+  fill: white;
+}
+
+.projects__swiper-button-next:hover,
+.projects__swiper-button-prev:hover {
+  background-color: $colorTultipFocus;
+  border-color: $colorTultipFocus;
+}
+
+.accordion__ac-text-item-btn:hover {
+  border-bottom:  1px solid $colorBorderBtn;
+}
+
+//active
+
+.nav__list-link:active {
+  color: $colorLinkFocus;
+}
+
+.menu__button:active {
+  color: $colorBorderBtn;
+}
+
+.menu__button:active > .menu__button-img {
+  fill: $colorBorderBtn;
+}
+
+.submenu__btn:active {
+  color: $colorBorderBtn;
+}
+
+.submenu__btn:active::after {
+  opacity: 0;
+}
+
+.dropdown__link:active::after {
+  background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4));
+  border-color: transparent;
+}
+
+.submenu__form-input:active {
+  border-color: $colorLinkFocus;
+}
+
+.banner__link:active {
+  background-color: $colorLinkFocus;
+  border-color: $colorTultipFocus;
+}
+
+.dropdown__link:active::after {
+  opacity: 1;
+}
+
+.gallery__swiper-button-next:active,
+.gallery__swiper-button-prev:active {
+  background-color: $colorLinkFocus;
+  border-color: black;
+}
+
+.checkbox:active > span {
+  border-color: $colorCheckbox;
+  color: $colorCheckbox;
+}
+
+.gallery__swiper-slide {
+  position: relative;
+}
+
+.gallery__swiper-slide-leance{
+  position: absolute;
+  top: 25px;
+  bottom: 25px;
+  left: 25px;
+  right: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  z-index: 2;
+}
+
+.gallery__swiper-slide:active > .gallery__swiper-slide-leance {
+  opacity: 1;
+}
+
+.gallery__swiper-slide::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.gallery__swiper-slide:active::after {
+  background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4));
+  opacity: 1;
+}
+
+.accordion__ac-trigger:active {
+  border-color: $colorLinkFocus;
+}
+
+.accordion__ac-trigger:active > .accordion__ac-trigger-text {
+  color: $colorLinkFocus;
+}
+
+.accordion__ac-trigger:active > .accordion__ac-trigger-arrow {
+  background-color: $colorTultipFocus;
+  border-color: $colorLinkFocus;
+}
+
+.events__swiper-button-next:active,
+.events__swiper-button-prev:active {
+  background-color: $colorTultipFocus;
+  border-color: $colorBorderBtn;
+}
+
+.events__swiper-slide-link:active {
+  color: black;
+}
+
+.projects__text-tultip:active > svg {
+    fill: $colorBorderBtn;
+  }
+
+  .projects__text-tultip:active > svg > path:nth-child(2) {
+    fill: white;
+  }
+
+
+.projects__text-link:active {
+  color: $colorLinkFocus;
+}
+
+.projects__swiper-slide:active > picture > .projects__swiper-slide-img {
+  filter: grayscale(0);
+}
+
+.projects__swiper-slide:active {
+  border: 1px solid $colorBorderBtn;
+}
+
+.contacts__form-btn:active,
+.contacts__form-btn_mob:active {
+  color: white;
+  border-color: $colorTultipFocus;
+  background-color: $colorLinkFocus;
+}
+
+.contacts__form-input:active {
+  background-color: #ECECEC;
+}
+
+.socials__link:active > svg > path {
+  stroke: $colorBorderBtn;
+}
+
+.footer__link:active > svg {
+  fill: $colorBorderBtn;
+}
+
+.projects__swiper-button-next:active,
+.projects__swiper-button-prev:active {
+  background-color: $colorTultipFocus;
+  border-color: $colorBorderBtn;
+}

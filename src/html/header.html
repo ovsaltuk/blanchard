@@ -1,0 +1,48 @@
+<header class="header">
+  <div class="container header__container">
+    <button class="reset-btn burger-btn">
+      <svg class="burger-btn__img"><use xlink:href="img/icons/icons.svg#burger"></use></svg>
+    </button>
+    <a href="#" class="logo header__logo">
+      <picture>
+        <source media="(max-width:767px)" srcset="@img/logo-320.png">
+        <source media="(max-width:1390px)" srcset="@img/logo-1024.png">
+        <img src="@img/logo-1920.png" class="logo__img" alt="logo">
+      </picture>
+      
+    </a>
+    <div class="menu">
+      <button class="menu__close-btn reset-btn">
+        <svg class="menu__close-btn-img"><use xlink:href="img/icons/icons.svg#close-btn"></use></svg>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list reset-list">
+          <li class="nav__list-item"><a tabindex="0" href="#about" class="nav__list-link reset-link">О нас</a></li>
+          <li class="nav__list-item"><a tabindex="0" href="#gallery" class="nav__list-link reset-link">Галерея</a></li>
+          <li class="nav__list-item"><a tabindex="0" href="#catalogue" class="nav__list-link reset-link">Каталог</a></li>
+          <li class="nav__list-item"><a tabindex="0" href="#events" class="nav__list-link reset-link">События</a></li>
+          <li class="nav__list-item"><a tabindex="0" href="#projects" class="nav__list-link reset-link">Проекты</a></li>
+          <li class="nav__list-item"><a tabindex="0" href="#contscts" class="nav__list-link reset-link">Контакты</a></li>
+        </ul>
+      </nav>
+      <button class="menu__button reset-btn">
+        <svg class="menu__button-img"><use xlink:href="img/icons/icons.svg#enter"></use></svg>
+        Войти
+      </button>
+    </div>
+    <div class="search">
+      <button class="search__button reset-btn">
+        <svg class="search__button-img"><use xlink:href="img/icons/icons.svg#search"></use></svg>
+      </button>
+      <form action="#" class="search__form search__form_disable">
+        <button class="reset-btn search__button-search">
+          <svg class="search__button-search-img"><use xlink:href="img/icons/icons.svg#search"></use></svg>
+        </button>
+        <input type="text" class="search__input">
+        <button class="reset-btn search__form-close-btn">
+          <svg class="search__form-close-btn-img"><use xlink:href="img/icons/icons.svg#close-btn"></use></svg>
+        </button>
+      </form>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,41 @@
+@import "./var";
+@import "./mixins";
+
+.about {
+  padding-top: 80px;
+  padding-bottom: 69px;
+  &__title {
+    margin-bottom: 17px;
+    @include fontSectionTitle;
+  }
+  &__text {
+    max-width: 64%;
+    @include fontMainText;
+  }
+}
+
+@media (max-width: 1390px) {
+  .about {
+    &__text {
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  
+}
+
+@media (max-width: 767px) {
+  .about {
+    padding-top: 51px;
+    padding-bottom: 41px;
+    &__title {
+      margin-bottom: 11px;
+      @include fontSectionTitleMob;
+    }
+    &__text {
+      @include fontMainTextMob;   
+    }
+  }
+}

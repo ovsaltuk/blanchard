@@ -1,0 +1,140 @@
+@import "./var";
+@import "./mixins";
+@import "../../../node_modules/simplebar/dist/simplebar.min";
+.submenu {
+  padding-top: 22px;
+  padding-bottom: 21px;
+  background: $semiTransparent;
+  &__container{
+    @include flexCenter;
+    justify-content: space-between;
+  }
+  &__list {
+    @include flexCenter;
+  }
+  &__item{
+    position: relative;
+  }
+  &__item:not(:last-child){
+    margin-right: 15%;
+  }
+  &__btn{
+    display: flex;
+    align-items: baseline;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: white;
+    transition: color .3s ease-in-out;
+  }
+  &__btn-img {
+    margin-left: 4px;
+    height: 7px;
+    width: 12px;
+    @include arrowStartPosition;
+    stroke: currentColor;
+  }
+  &__btn_active &__btn-img{
+    @include arrowRotate;
+  }
+  &__form{
+    @include flexCenter;
+    &-btn{
+      margin-right: 9px;
+      &-img{
+        height: 21.62px;
+        width: 22.1px;
+      }
+    }
+    &-input{
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+      color: rgba(255, 255, 255, 0.85);
+      border-bottom: 1px solid white;
+      transition: border-color .3s ease-out;
+    }
+    &-input::placeholder{
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+      color: rgba(255, 255, 255, 0.85);
+    }
+  }
+}
+
+.dropdown {
+  position: absolute;
+  top: 46px;
+  box-sizing: border-box;
+  padding: 40px;
+  padding-right: 20px;
+  height: 300px;
+  width: 300px;
+  background: $semiTransparent;
+  &__simplebar {
+    padding-right: 20px;
+    height: 220px;
+    overflow: scroll;
+  }
+  &__item {
+    position: relative;
+    @include flexCenter;
+    padding-left: 14px;
+    height: 40px;
+    width: 220px;
+  }
+  &__item:not(:last-child){
+    margin-bottom: 20px;
+  }
+  &__img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  &__link{
+    @include flexCenter;
+    width: 100%;
+    height: 100%;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: white;
+    z-index: 1;
+  }
+  &__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+  }
+  &_disable{
+    @include disableAnimation;
+  }
+  &_active {
+    @include activeAnimation;
+  }
+
+}
+.simplebar-track.simplebar-vertical {
+  background: black;
+  width: 2px;
+}
+
+.simplebar-scrollbar.simplebar-visible:before {
+  left: 0;
+  width: 2px;
+  background: white;
+  border-radius: 0;
+  opacity: 1;
+}
+
+@media (max-width:1390px){
+  .submenu {
+    display: none;
+  }
+}

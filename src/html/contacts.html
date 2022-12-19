@@ -1,0 +1,41 @@
+<section class="contacts" id="contacts">
+  <div class="container contacts__container">
+    <h2 class="contacts__title">контакты</h2>
+    <div class="contacts__content-wrapper">
+      <div class="contacts__place">
+        <span class="contacts__place-text">Шоурум &#8470;&nbsp;4</span>
+        <span class="contacts__place-text">Леонтьевский переулок, дом 5/1</span> 
+      </div>
+      <form action="" class="contacts__form" id="contactsForm">
+        <input name="name" 
+              id="name"
+               type="text"
+               class="contacts__form-input reset-input" 
+               placeholder="Имя*"
+               data-validate-field="name">
+        <input name="tel"
+               id="tel"
+               type="tel"
+               class="contacts__form-input reset-input contacts__form-input-tel"
+               placeholder="Телефон*"
+               data-validate-field="tel"
+               data-validate-rules="phone"
+               data-inputmask="'mask': '+7 (999) 999 99 99'">
+        <button class="contacts__form-btn reset-btn">Заказать обратный звонок</button>
+        <button class="contacts__form-btn contacts__form-btn_mob reset-btn">Заказать</button>
+      </form>
+      <div class="socials">
+        <h3 class="socials__title">
+          Связаться в один клик
+        </h3>
+        <div class="socials__wrapper">
+          <a href="#" class="socials__link reset-link" tabindex="0"><svg class="socials__wrapper-icon"><use xlink:href="@img/icons/icons.svg#whatsapp"></use></svg></a>
+          <a href="#" class="socials__link reset-link" tabindex="0"><svg class="socials__wrapper-icon"><use xlink:href="@img/icons/icons.svg#telegram"></use></svg></a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div id="map" class="contacts__map " style="width: 100%; min-height: 100px"></div>
+</section>
+

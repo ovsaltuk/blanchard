@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+  "title":"Главная"
+})
+
+  <body>
+    @@include('html/header.html', {})
+    <main>
+      <div class="banner-submenu-wrapper">
+        <div class="hero-swiper">
+          <div class="swiper hero-swiper__container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide hero-swiper__slide hero-swiper__slide-1">
+              </div>
+              <div class="swiper-slide hero-swiper__slide hero-swiper__slide-2">
+              </div>
+              <div class="swiper-slide hero-swiper__slide hero-swiper__slide-3">
+              </div>
+            </div> 
+          </div>
+          </div> 
+        @@include('html/submenu.html', {})
+        @@include('html/banner.html', {})
+      </div>
+      @@include('html/about.html', {})
+      @@include('html/gallery.html', {})
+      @@include('html/catalogue.html', {})
+      @@include('html/events.html', {})
+      @@include('html/projects.html', {})
+      @@include('html/contacts.html', {})
+    </main>
+    @@include('html/footer.html', {})
+  </body>
+  <script src="js/app.min.js"></script>
+</html>

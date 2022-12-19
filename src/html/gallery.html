@@ -1,0 +1,126 @@
+<section class="gallery" id="gallery">
+  <div class="container gallery__container">
+    <div class="gallery__dropdown-container">
+      <h2 class="gallery__title">
+        Галерея
+      </h2>
+      <div class="gallery__select-container">
+        <span class="gallery__select-title">
+          Фильтр:
+        </span>
+        <select name="gallery-select" class="gallery__select">
+          <option value="Живопись">Живопись</option>
+          <option value="Рисунок">Рисунок</option>
+          <option value="Скульптура">Скульптура</option>
+        </select>
+      </div>
+      <div class="checkbox-container">
+        <label class="checkbox">
+          <input type="checkbox" class="checkbox__input" tabindex="0">
+          <span class="checkbox__square"></span>
+          <span class="checkbox__text">XIX век</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" class="checkbox__input" tabindex="0">
+          <span class="checkbox__square"></span>
+          <span class="checkbox__text">XX век</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" class="checkbox__input" tabindex="0">
+          <span class="checkbox__square"></span>
+          <span class="checkbox__text">Современность</span>
+        </label>
+      </div>
+    </div>
+    <div class="gallery__swiper-container">
+      <div class="pagination-container">
+        <div class="swiper-button-prev gallery__swiper-button-prev">
+          <svg class="gallery__swiper-button-img"><use xlink:href="img/icons/icons.svg#arrow-down"></use></svg>
+        </div>
+        <div class="swiper-pagination gallery__swiper-pagination"></div>
+        <div class="swiper-button-next gallery__swiper-button-next">
+          <svg class="gallery__swiper-button-img"><use xlink:href="img/icons/icons.svg#arrow-down"></use></svg>
+        </div>
+      </div>
+      
+      <div class="swiper gallery__swiper">
+        <div class="swiper-wrapper gallery__swiper-wrapper ">
+          <div class="swiper-slide gallery__swiper-slide">
+            <span class="gallery__swiper-slide-leance">
+              <svg class="gallery__swiper-slide-leance-icon"><use xlink:href="img/icons/icons.svg#leance"></use></svg>
+            </span>
+            <picture>
+              <source media="(max-width:767px)" srcset="@img/gallery/gallery-slide-1-320.jpg">
+              <source media="(max-width:1023px)" srcset="@img/gallery/gallery-slide-1-768.jpg">
+              <source media="(max-width:1390px)" srcset="@img/gallery/gallery-slide-1-1024.jpg">
+              <img src="@img/gallery/gallery-slide-1-1920.jpg" alt="paint" class="gallery__swiper-img">
+            </picture>
+          </div>
+
+          <div class="swiper-slide gallery__swiper-slide">
+            <span class="gallery__swiper-slide-leance">
+              <svg class="gallery__swiper-slide-leance-icon"><use xlink:href="img/icons/icons.svg#leance"></use></svg>
+            </span>
+            <picture>
+              <source media="(max-width:767px)" srcset="@img/gallery/gallery-slide-2-320.jpg">
+              <source media="(max-width:1023px)" srcset="@img/gallery/gallery-slide-2-768.jpg">
+              <source media="(max-width:1390px)" srcset="@img/gallery/gallery-slide-2-1024.jpg">
+              <img src="@img/gallery/gallery-slide-2-1920.jpg" alt="paint" class="gallery__swiper-img">
+            </picture>
+          </div>
+
+          <div class="swiper-slide gallery__swiper-slide">
+            <span class="gallery__swiper-slide-leance">
+              <svg class="gallery__swiper-slide-leance-icon"><use xlink:href="img/icons/icons.svg#leance"></use></svg>
+            </span>
+            <picture>
+              <source media="(max-width:767px)" srcset="@img/gallery/gallery-slide-3-320.jpg">
+              <source media="(max-width:1023px)" srcset="@img/gallery/gallery-slide-3-768.jpg">
+              <source media="(max-width:1390px)" srcset="@img/gallery/gallery-slide-3-1024.jpg">
+              <img src="@img/gallery/gallery-slide-3-1920.jpg" alt="paint" class="gallery__swiper-img">
+            </picture>
+          </div>
+
+          <div class="swiper-slide gallery__swiper-slide">
+            <span class="gallery__swiper-slide-leance">
+              <svg class="gallery__swiper-slide-leance-icon"><use xlink:href="img/icons/icons.svg#leance"></use></svg>
+            </span>
+            <picture>
+              <source media="(max-width:767px)" srcset="@img/gallery/gallery-slide-4-320.jpg">
+              <source media="(max-width:1023px)" srcset="@img/gallery/gallery-slide-4-768.jpg">
+              <source media="(max-width:1390px)" srcset="@img/gallery/gallery-slide-4-1024.jpg">
+              <img src="@img/gallery/gallery-slide-4-1920.jpg" alt="paint" class="gallery__swiper-img">
+            </picture>
+          </div>
+
+          <div class="swiper-slide gallery__swiper-slide">
+            <span class="gallery__swiper-slide-leance">
+              <svg class="gallery__swiper-slide-leance-icon"><use xlink:href="img/icons/icons.svg#leance"></use></svg>
+            </span>
+            <picture>
+              <source media="(max-width:767px)" srcset="@img/gallery/gallery-slide-5-320.jpg">
+              <source media="(max-width:1023px)" srcset="@img/gallery/gallery-slide-5-768.jpg">
+              <source media="(max-width:1390px)" srcset="@img/gallery/gallery-slide-5-1024.jpg">
+              <img src="@img/gallery/gallery-slide-5-1920.jpg" alt="paint" class="gallery__swiper-img">
+            </picture>
+          </div>
+
+          <div class="swiper-slide gallery__swiper-slide">
+            <span class="gallery__swiper-slide-leance">
+              <svg class="gallery__swiper-slide-leance-icon"><use xlink:href="img/icons/icons.svg#leance"></use></svg>
+            </span>
+            <picture>
+              <source media="(max-width:767px)" srcset="@img/gallery/gallery-slide-6-320.jpg">
+              <source media="(max-width:1023px)" srcset="@img/gallery/gallery-slide-6-768.jpg">
+              <source media="(max-width:1390px)" srcset="@img/gallery/gallery-slide-6-1024.jpg">
+              <img src="@img/gallery/gallery-slide-6-1920.jpg" alt="paint" class="gallery__swiper-img">
+            </picture>
+          </div>
+         
+        </div>
+
+      </div>
+    </div>
+    
+  </div>
+</section>

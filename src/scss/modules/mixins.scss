@@ -1,0 +1,67 @@
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+}
+
+@mixin opasityTransformTransition {
+  transition: opacity .3s ease-in-out,
+  transform .3s ease-in-out,
+  visibility .3s ease-in-out;
+}
+
+@mixin disableAnimation {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: opacity .3s ease-in-out,
+  transform .3s ease-in-out,
+  visibility .3s ease-in-out;
+}
+
+@mixin activeAnimation {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+@mixin arrowStartPosition {
+  transform: rotate(0deg);
+  transition: transform .3s ease-in-out;
+}
+
+@mixin arrowRotate {
+  transform: rotate(180deg);
+}
+
+//fonts
+@mixin fontButton {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+@mixin fontSectionTitle {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 65px;
+  color: #333333;
+}
+
+@mixin fontMainText {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #333333;
+}
+
+@mixin fontSectionTitleMob {
+  font-size: 28px;
+  line-height: 38px;
+}
+
+@mixin fontMainTextMob {
+  font-size: 14px;
+  line-height: 28px;
+}
+
+
+
