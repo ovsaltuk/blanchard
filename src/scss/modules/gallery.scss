@@ -167,6 +167,10 @@
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+.is-selected {
+  display: none;
+}
+
 .checkbox{
   position: relative;
   cursor: pointer;

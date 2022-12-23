@@ -7,13 +7,16 @@
         <span class="contacts__place-text">Леонтьевский переулок, дом 5/1</span> 
       </div>
       <form action="" class="contacts__form" id="contactsForm">
-        <input name="name" 
+        <div class="contacts__form-input-container">
+          <input name="name" 
               id="name"
                type="text"
                class="contacts__form-input reset-input" 
                placeholder="Имя*"
                data-validate-field="name">
-        <input name="tel"
+        </div>
+        <div class="contacts__form-input-container">
+          <input name="tel"
                id="tel"
                type="tel"
                class="contacts__form-input reset-input contacts__form-input-tel"
@@ -21,6 +24,7 @@
                data-validate-field="tel"
                data-validate-rules="phone"
                data-inputmask="'mask': '+7 (999) 999 99 99'">
+        </div>
         <button class="contacts__form-btn reset-btn">Заказать обратный звонок</button>
         <button class="contacts__form-btn contacts__form-btn_mob reset-btn">Заказать</button>
       </form>

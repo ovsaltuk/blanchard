@@ -19,9 +19,20 @@
   "modules/contacts",
   "modules/effects";
 
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
 .body-wrapper{
-  min-height: 100vh;
+
   overflow: scroll;
   overflow-x: hidden;
   &_menu-open {

@@ -1874,7 +1874,11 @@ a {
 }
 
 .submenu__item:not(:last-child) {
-  margin-right: 15%;
+  margin-right: 6em;
+}
+
+.submenu__item:last-child {
+  margin-right: 2em;
 }
 
 .submenu__btn {
@@ -1993,7 +1997,6 @@ a {
 .dropdown__simplebar {
   padding-right: 20px;
   height: 220px;
-  overflow: scroll;
 }
 
 .dropdown__item {
@@ -2369,6 +2372,10 @@ a {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+.is-selected {
+  display: none;
+}
+
 .checkbox {
   position: relative;
   cursor: pointer;
@@ -2457,6 +2464,13 @@ a {
   font-size: 16px;
   line-height: 32px;
   color: #333333;
+}
+
+.catalogue__item-link {
+  font-family: OpenSans;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .accordion-tabs {
@@ -2569,12 +2583,26 @@ a {
 }
 
 .accordion__ac-text-item-btn {
+  font-family: OpenSans;
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
-  color: #333333;
   text-align: left;
   border-bottom: 1px solid transparent;
+}
+
+.accordion__ac-text-item-title {
+  margin-bottom: 5px;
+  font-family: OpenSans;
+}
+
+.accordion__ac-text-item-text {
+  margin-bottom: 5px;
+  font-family: OpenSans;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .tabs {
@@ -2677,7 +2705,7 @@ a {
 }
 
 .events {
-  padding-top: 13px;
+  padding-top: 3px;
   padding-bottom: 80px;
 }
 
@@ -3040,8 +3068,8 @@ a {
 }
 
 .contacts__form-input {
-  margin-right: 20px;
   padding: 10px 4%;
+  width: 90%;
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
@@ -3050,8 +3078,18 @@ a {
   border-radius: 100px;
 }
 
+.contacts__form-input-container {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-right: 20px;
+}
+
 .contacts__form-btn {
-  padding: 17px 6%;
+  padding: 17px 4%;
+  font-weight: 700;
+  font-size: 18px;
   color: #9D5CD0;
   white-space: nowrap;
   border: 1px solid currentColor;
@@ -3066,6 +3104,17 @@ a {
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+
+.js-validate-error-label {
+  position: absolute;
+  top: -17px;
+  left: 20px;
+  font-family: OpenSans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .socials__title {
@@ -3414,8 +3463,19 @@ a {
   border-color: #9D5CD0;
 }
 
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .body-wrapper {
-  min-height: 100vh;
   overflow: scroll;
   overflow-x: hidden;
 }
