@@ -472,3 +472,18 @@
   background-color: $colorTultipFocus;
   border-color: $colorBorderBtn;
 }
+
+
+
+.nav__list-link:focus:hover::after,
+.nav__list-link:focus-visible:hover::after,
+.nav__list-link:active:hover::after,
+.menu__button:focus:hover::after,
+.menu__button:focus-visible:hover::after,
+.menu__button:active:hover::after,
+.accordion__ac-trigger:focus:hover > .accordion__ac-trigger-text::after,
+.accordion__ac-trigger:focus-visible:hover > .accordion__ac-trigger-text::after,
+.projects__text-link:focus:hover::after,
+.projects__text-link:focus-visible:hover::after {
+  opacity: 0;
+} 

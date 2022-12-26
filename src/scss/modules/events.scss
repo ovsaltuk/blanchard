@@ -19,6 +19,7 @@
     background-color: #ECECEC;
     border: 1px solid #ECECEC;
     border-radius: 50%;
+    transition: all .3s ease-in-out;
   }
   &__swiper-button-next::after,
   &__swiper-button-prev::after {

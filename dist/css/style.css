@@ -1912,12 +1912,6 @@ a {
   stroke: currentColor;
 }
 
-.submenu__btn_active .submenu__btn-img {
-  -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-
 .submenu__form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1980,6 +1974,12 @@ a {
   font-size: 18px;
   line-height: 25px;
   color: rgba(255, 255, 255, 0.85);
+}
+
+.submenu_btn_active > .submenu__btn-img {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .dropdown {
@@ -2733,6 +2733,9 @@ a {
   background-color: #ECECEC;
   border: 1px solid #ECECEC;
   border-radius: 50%;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .events__swiper-button-next::after,
@@ -3461,6 +3464,19 @@ a {
 .projects__swiper-button-prev:active {
   background-color: #D1A9F0;
   border-color: #9D5CD0;
+}
+
+.nav__list-link:focus:hover::after,
+.nav__list-link:focus-visible:hover::after,
+.nav__list-link:active:hover::after,
+.menu__button:focus:hover::after,
+.menu__button:focus-visible:hover::after,
+.menu__button:active:hover::after,
+.accordion__ac-trigger:focus:hover > .accordion__ac-trigger-text::after,
+.accordion__ac-trigger:focus-visible:hover > .accordion__ac-trigger-text::after,
+.projects__text-link:focus:hover::after,
+.projects__text-link:focus-visible:hover::after {
+  opacity: 0;
 }
 
 html {

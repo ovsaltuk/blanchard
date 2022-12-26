@@ -37,9 +37,7 @@
     @include arrowStartPosition;
     stroke: currentColor;
   }
-  &__btn_active &__btn-img{
-    @include arrowRotate;
-  }
+  
   &__form{
     @include flexCenter;
     &-btn{
@@ -64,6 +62,10 @@
       color: rgba(255, 255, 255, 0.85);
     }
   }
+}
+
+.submenu_btn_active > .submenu__btn-img{
+  @include arrowRotate;
 }
 
 .dropdown {
