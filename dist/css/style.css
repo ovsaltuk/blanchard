@@ -3475,7 +3475,9 @@ a {
 .accordion__ac-trigger:focus:hover > .accordion__ac-trigger-text::after,
 .accordion__ac-trigger:focus-visible:hover > .accordion__ac-trigger-text::after,
 .projects__text-link:focus:hover::after,
-.projects__text-link:focus-visible:hover::after {
+.projects__text-link:focus-visible:hover::after,
+.banner__link:focus:active::after,
+.banner__link:focus-visible:active::after {
   opacity: 0;
 }
 
