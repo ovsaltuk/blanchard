@@ -69,118 +69,86 @@
     background-color: $colorBorderBtn;
   }
 
-  .accordion__ac-header:focus,
+
   .accordion__ac-header:focus-visible,
-  .submenu__btn:focus,
   .submenu__btn:focus-visible,
-  .menu__button:focus,
   .menu__button:focus-visible,
-  .accordion__ac-trigger:focus,
   .accordion__ac-trigger:focus-visible,
-  .accordion__ac-text-item-btn:focus,
   .accordion__ac-text-item-btn:focus-visible,
-  .contacts__form-btn:focus,
   .contacts__form-btn:focus-visible,
-  .footer__link:focus,
   .footer__link:focus-visible,
-  .projects__text-tultip:focus,
   .projects__text-tultip:focus-visible  {
     outline: none;
   }
 
-  .nav__list-link:focus::after,
+
   .nav__list-link:focus-visible::after,
-  .menu__button:focus::after,
   .menu__button:focus-visible::after,
-  .submenu__btn:focus::after,
   .submenu__btn:focus-visible::after,
-  .accordion__ac-trigger:focus > .accordion__ac-trigger-text::after,
   .accordion__ac-trigger:focus-visible > .accordion__ac-trigger-text::after,
-  .accordion__ac-text-item-btn:focus::after,
   .accordion__ac-text-item-btn:focus-visible::after,
-  .events__swiper-slide-link:focus::after,
   .events__swiper-slide-link:focus-visible::after,
-  .projects__text-link:focus::after,
   .projects__text-link:focus-visible::after,
-  .banner__link:focus::after,
   .banner__link:focus-visible:after,
-  .dropdown__link:focus::after,
   .dropdown__link:focus-visible:after,
-  .contacts__form-btn:focus::after,
   .contacts__form-btn:focus-visible:after   {
     opacity: 1;
   }
 
-  .accordion__ac-trigger:focus > .accordion__ac-trigger-text,
   .accordion__ac-trigger:focus-visible > .accordion__ac-trigger-text,
-  .accordion__ac-text-item-btn:focus,
   .accordion__ac-text-item-btn:focus-visible,
-  .events__swiper-slide-link:focus,
   .events__swiper-slide-link:focus-visible,
-  .projects__text-link:focus,
   .projects__text-link:focus-visible {
     color: white;
   }
 
-  .accordion__ac-trigger:focus > .accordion__ac-trigger-arrow,
   .accordion__ac-trigger:focus-visible > .accordion__ac-trigger-arrow {
     background-color: $colorTultipFocus;
   }
 
-  .gallery__swiper-button-next:focus,
-  .gallery__swiper-button-next:focus,
   .gallery__swiper-button-next:focus-visible,
   .gallery__swiper-button-next:focus-visible {
     border: 2px solid black;
     outline: none;
   }
 
-  .projects__swiper-button-next:focus,
   .projects__swiper-button-next:focus-visible,
-  .projects__swiper-button-prev:focus,
   .projects__swiper-button-prev:focus-visible {
     border: 2px solid $colorBorderBtn;
     outline: none;
   }
 
-  .submenu__form-input:focus,
   .submenu__form-input:focus-visible {
     border-color: $colorCheckbox;
   }
 
-  .checkbox__input:focus ~ span {
+  .checkbox__input:focus-visible ~ span {
     color: $colorCheckbox;
     border-color: $colorCheckbox;
   }
 
-  .contacts__form-input:focus,
   .contacts__form-input:focus-visible {
     background-color: #ECECEC;
   }
 
-  .socials__link:focus,
   .socials__link:focus-visible {
     opacity: .5;
     outline: none;
   }
 
-  .projects__swiper-slide:focus,
   .projects__swiper-slide:focus-visible {
     border-color: $colorBorderBtn;
     outline: none;
   }
   
-  .footer__link:focus > svg,
   .footer__link:focus-visible > svg {
     fill: white;
   }
 
-  .projects__text-tultip:focus > svg,
   .projects__text-tultip:focus-visible > svg {
     fill: $colorTultipFocus;
   }
 
-  .gallery__swiper-slide:focus,
   .gallery__swiper-slide:focus-visible {
     border: 3px solid #7943A4;
   }
@@ -486,6 +454,12 @@
 .projects__text-link:focus:hover::after,
 .projects__text-link:focus-visible:hover::after,
 .banner__link:focus:active::after,
-.banner__link:focus-visible:active::after {
+.banner__link:focus-visible:active::after,
+.banner__link:focus-visible:hover::after,
+.banner__link:focus:hover::after,
+.contacts__form-btn:focus:active::after,
+.contacts__form-btn:focus-visible:active::after,
+.contacts__form-btn:focus:hover::after,
+.contacts__form-btn:focus-visible:hover::after {
   opacity: 0;
 } 
