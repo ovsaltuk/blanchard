@@ -229,6 +229,14 @@
   .accordion__ac .accordion__ac-trigger {
     padding-top: 32px;
   }
+
+  .tabs {
+    width: 76%;
+  }
+
+  .accordion__ac .accordion__ac-panel .accordion__ac-text {
+    padding: 19px 0;
+  }
 }
 
 @media (max-width: 1023px) {

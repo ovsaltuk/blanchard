@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css?_v=20221226100551">
-  <link rel="stylesheet" href="./css/style.min.css?_v=20221226100551">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
+  <link rel="stylesheet" href="./css/style.min.css">
   <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=44f6e0b7-6a7c-47e0-b666-716154a2c544&lang=ru_RU&_v=20221226100551"
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=44f6e0b7-6a7c-47e0-b666-716154a2c544&lang=ru_RU"
   type="text/javascript">
   </script>
   <title>Главная</title>
@@ -16,10 +16,10 @@
   <body>
     <header class="header">
   <div class="container header__container">
-    <button class="reset-btn burger-btn">
+    <button class="reset-btn burger-btn" aria-label="открыть меню">
       <svg class="burger-btn__img"><use xlink:href="img/icons/icons.svg#burger"></use></svg>
     </button>
-    <a href="#" class="logo header__logo">
+    <a href="#" class="logo header__logo" aria-label="логотип">
       <picture>
         <source media="(max-width:767px)" srcset="img/logo-320.png">
         <source media="(max-width:1390px)" srcset="img/logo-1024.png">
@@ -28,30 +28,30 @@
       
     </a>
     <div class="menu">
-      <button class="menu__close-btn reset-btn">
+      <button class="menu__close-btn reset-btn" aria-label="закрыть меню">
         <svg class="menu__close-btn-img"><use xlink:href="img/icons/icons.svg#close-btn"></use></svg>
       </button>
       <nav class="nav">
         <ul class="nav__list reset-list">
-          <li class="nav__list-item"><a tabindex="0" href="#about" class="nav__list-link reset-link">О нас</a></li>
-          <li class="nav__list-item"><a tabindex="0" href="#gallery" class="nav__list-link reset-link">Галерея</a></li>
-          <li class="nav__list-item"><a tabindex="0" href="#catalogue" class="nav__list-link reset-link">Каталог</a></li>
-          <li class="nav__list-item"><a tabindex="0" href="#events" class="nav__list-link reset-link">События</a></li>
-          <li class="nav__list-item"><a tabindex="0" href="#projects" class="nav__list-link reset-link">Проекты</a></li>
-          <li class="nav__list-item"><a tabindex="0" href="#contscts" class="nav__list-link reset-link">Контакты</a></li>
+          <li class="nav__list-item"><a tabindex="0" href="#about" class="nav__list-link reset-link" aria-label="перейти в раздел о нас">О нас</a></li>
+          <li class="nav__list-item"><a tabindex="0" href="#gallery" class="nav__list-link reset-link" aria-label="перейти в раздел галерея">Галерея</a></li>
+          <li class="nav__list-item"><a tabindex="0" href="#catalogue" class="nav__list-link reset-link" aria-label="перейти в раздел каталог">Каталог</a></li>
+          <li class="nav__list-item"><a tabindex="0" href="#events" class="nav__list-link reset-link" aria-label="перейти в раздел события">События</a></li>
+          <li class="nav__list-item"><a tabindex="0" href="#projects" class="nav__list-link reset-link" aria-label="перейти в раздел Проекты">Проекты</a></li>
+          <li class="nav__list-item"><a tabindex="0" href="#contscts" class="nav__list-link reset-link" aria-label="перейти в раздел контакты">Контакты</a></li>
         </ul>
       </nav>
-      <button class="menu__button reset-btn">
+      <button class="menu__button reset-btn" aria-label="войти в личный кабинет">
         <svg class="menu__button-img"><use xlink:href="img/icons/icons.svg#enter"></use></svg>
         Войти
       </button>
     </div>
     <div class="search">
-      <button class="search__button reset-btn">
+      <button class="search__button reset-btn" aria-label="поиск по сайту">
         <svg class="search__button-img"><use xlink:href="img/icons/icons.svg#search"></use></svg>
       </button>
       <form action="#" class="search__form search__form_disable">
-        <button class="reset-btn search__button-search">
+        <button class="reset-btn search__button-search" aria-label="начать поиск">
           <svg class="search__button-search-img"><use xlink:href="img/icons/icons.svg#search"></use></svg>
         </button>
         <input type="text" class="search__input">
@@ -88,12 +88,12 @@
         <div class="dropdown dropdown_disable">
           <div class="dropdown__simplebar">
             <ul class="reset-list dropdown__list">
-              <li class="dropdown__item"><a href="#" class="dropdown__link reset-link" tabindex="0">Тинторетто</a><picture><source srcset="img/submenu/realism-1.webp" type="image/webp"><img src="img/submenu/realism-1.png" alt="" class="dropdown__img"></picture></li>
-              <li class="dropdown__item"><a href="#" class="dropdown__link reset-link" tabindex="0">Фридрих</a><picture><source srcset="img/submenu/realism-2.webp" type="image/webp"><img src="img/submenu/realism-2.png" alt="" class="dropdown__img"></picture></li>
-              <li class="dropdown__item"><a href="#" class="dropdown__link reset-link" tabindex="0">Леонардо</a><picture><source srcset="img/submenu/realism-3.webp" type="image/webp"><img src="img/submenu/realism-3.png" alt="" class="dropdown__img"></picture></li>
-              <li class="dropdown__item"><a href="#" class="dropdown__link reset-link" tabindex="0">Верроккьо</a><picture><source srcset="img/submenu/realism-4.webp" type="image/webp"><img src="img/submenu/realism-4.png" alt="" class="dropdown__img"></picture></li>
-              <li class="dropdown__item"><a href="#" class="dropdown__link reset-link" tabindex="0">Тинторетто</a><picture><source srcset="img/submenu/realism-1.webp" type="image/webp"><img src="img/submenu/realism-1.png" alt="" class="dropdown__img"></picture></li>
-              <li class="dropdown__item"><a href="#" class="dropdown__link reset-link" tabindex="0">Тинторетто</a><picture><source srcset="img/submenu/realism-1.webp" type="image/webp"><img src="img/submenu/realism-1.png" alt="" class="dropdown__img"></picture></li>
+              <li class="dropdown__item"><a href="#" class="dropdown__link reset-link" tabindex="0" aria-label="перейти в раздел о Тинторетто">Тинторетто</a><img src="img/submenu/realism-1.png" alt="" class="dropdown__img"></li>
+              <li class="dropdown__item"><a href="#" class="dropdown__link reset-link" tabindex="0" aria-label="перейти в раздел о Фридри">Фридрих</a><img src="img/submenu/realism-2.png" alt="" class="dropdown__img"></li>
+              <li class="dropdown__item"><a href="#" class="dropdown__link reset-link" tabindex="0" aria-label="перейти в раздел о леонардо">Леонардо</a><img src="img/submenu/realism-3.png" alt="" class="dropdown__img"></li>
+              <li class="dropdown__item"><a href="#" class="dropdown__link reset-link" tabindex="0" aria-label="перейти в раздел о вероккьо">Верроккьо</a><img src="img/submenu/realism-4.png" alt="" class="dropdown__img"></li>
+              <li class="dropdown__item"><a href="#" class="dropdown__link reset-link" tabindex="0" aria-label="перейти в раздел о Тинторетто">Тинторетто</a><img src="img/submenu/realism-1.png" alt="" class="dropdown__img"></li>
+              <li class="dropdown__item"><a href="#" class="dropdown__link reset-link" tabindex="0" aria-label="перейти в раздел о Тинторетто">Тинторетто</a><img src="img/submenu/realism-1.png" alt="" class="dropdown__img"></li>
             </ul>
           </div>
         </div>
@@ -106,10 +106,10 @@
         <div class="dropdown dropdown_disable">
           <div class="dropdown__simplebar">
             <ul class="reset-list dropdown__list">
-              <li class="dropdown__item"><a href="#" class="dropdown__link reset-link" tabindex="0">Моне</a><picture><source srcset="img/submenu/impressionizm-1.webp" type="image/webp"><img src="img/submenu/impressionizm-1.png" alt="" class="dropdown__img"></picture></li>
-              <li class="dropdown__item"><a href="#" class="dropdown__link reset-link" tabindex="0">Сислей</a><picture><source srcset="img/submenu/impressionizm-2.webp" type="image/webp"><img src="img/submenu/impressionizm-2.png" alt="" class="dropdown__img"></picture></li>
-              <li class="dropdown__item"><a href="#" class="dropdown__link reset-link" tabindex="0">Мане</a><picture><source srcset="img/submenu/impressionizm-3.webp" type="image/webp"><img src="img/submenu/impressionizm-3.png" alt="" class="dropdown__img"></picture></li>
-              <li class="dropdown__item"><a href="#" class="dropdown__link reset-link" tabindex="0">Ренуар</a><picture><source srcset="img/submenu/impressionizm-4.webp" type="image/webp"><img src="img/submenu/impressionizm-4.png" alt="" class="dropdown__img"></picture></li>
+              <li class="dropdown__item"><a href="#" class="dropdown__link reset-link" tabindex="0" aria-label="перейти в раздел о моне">Моне</a><img src="img/submenu/impressionizm-1.png" alt="" class="dropdown__img"></li>
+              <li class="dropdown__item"><a href="#" class="dropdown__link reset-link" tabindex="0" aria-label="перейти в раздел о сислей">Сислей</a><img src="img/submenu/impressionizm-2.png" alt="" class="dropdown__img"></li>
+              <li class="dropdown__item"><a href="#" class="dropdown__link reset-link" tabindex="0" aria-label="перейти в раздел о мане">Мане</a><img src="img/submenu/impressionizm-3.png" alt="" class="dropdown__img"></li>
+              <li class="dropdown__item"><a href="#" class="dropdown__link reset-link" tabindex="0" aria-label="перейти в раздел о ренуар">Ренуар</a><img src="img/submenu/impressionizm-4.png" alt="" class="dropdown__img"></li>
             </ul>
           </div>
         </div>
@@ -122,10 +122,10 @@
         <div class="dropdown dropdown_disable">
           <div class="dropdown__simplebar">
             <ul class="reset-list dropdown__list">
-              <li class="dropdown__item"><a href="#" class="dropdown__link reset-link" tabindex="0">Ван Гог</a><picture><source srcset="img/submenu/postimpressionizm-1.webp" type="image/webp"><img src="img/submenu/postimpressionizm-1.png" alt="" class="dropdown__img"></picture></li>
-              <li class="dropdown__item"><a href="#" class="dropdown__link reset-link" tabindex="0">Сезанн</a><picture><source srcset="img/submenu/postimpressionizm-2.webp" type="image/webp"><img src="img/submenu/postimpressionizm-2.png" alt="" class="dropdown__img"></picture></li>
-              <li class="dropdown__item"><a href="#" class="dropdown__link reset-link" tabindex="0">Гоген</a><picture><source srcset="img/submenu/postimpressionizm-3.webp" type="image/webp"><img src="img/submenu/postimpressionizm-3.png" alt="" class="dropdown__img"></picture></li>
-              <li class="dropdown__item"><a href="#" class="dropdown__link reset-link" tabindex="0">Сёра</a><picture><source srcset="img/submenu/postimpressionizm-4.webp" type="image/webp"><img src="img/submenu/postimpressionizm-4.png" alt="" class="dropdown__img"></picture></li>
+              <li class="dropdown__item"><a href="#" class="dropdown__link reset-link" tabindex="0" aria-label="перейти в раздел о ван гог">Ван Гог</a><img src="img/submenu/postimpressionizm-1.png" alt="" class="dropdown__img"></li>
+              <li class="dropdown__item"><a href="#" class="dropdown__link reset-link" tabindex="0" aria-label="перейти в раздел о сезанн">Сезанн</a><img src="img/submenu/postimpressionizm-2.png" alt="" class="dropdown__img"></li>
+              <li class="dropdown__item"><a href="#" class="dropdown__link reset-link" tabindex="0" aria-label="перейти в раздел о гоген">Гоген</a><img src="img/submenu/postimpressionizm-3.png" alt="" class="dropdown__img"></li>
+              <li class="dropdown__item"><a href="#" class="dropdown__link reset-link" tabindex="0" aria-label="перейти в раздел о сера">Сёра</a><img src="img/submenu/postimpressionizm-4.png" alt="" class="dropdown__img"></li>
             </ul>
           </div>
         </div>
@@ -138,10 +138,10 @@
         <div class="dropdown dropdown_disable">
           <div class="dropdown__simplebar">
             <ul class="reset-list dropdown__list">
-              <li class="dropdown__item"><a href="#" class="dropdown__link reset-link" tabindex="0">Кандинский</a><picture><source srcset="img/submenu/avangard-1.webp" type="image/webp"><img src="img/submenu/avangard-1.png" alt="" class="dropdown__img"></picture></li>
-              <li class="dropdown__item"><a href="#" class="dropdown__link reset-link" tabindex="0">Маринетти</a><picture><source srcset="img/submenu/avangard-2.webp" type="image/webp"><img src="img/submenu/avangard-2.png" alt="" class="dropdown__img"></picture></li>
-              <li class="dropdown__item"><a href="#" class="dropdown__link reset-link" tabindex="0">Малевич</a><picture><source srcset="img/submenu/avangard-3.webp" type="image/webp"><img src="img/submenu/avangard-3.png" alt="" class="dropdown__img"></picture></li>
-              <li class="dropdown__item"><a href="#" class="dropdown__link reset-link" tabindex="0">Пикассо</a><picture><source srcset="img/submenu/avangard-4.webp" type="image/webp"><img src="img/submenu/avangard-4.png" alt="" class="dropdown__img"></picture></li>
+              <li class="dropdown__item"><a href="#" class="dropdown__link reset-link" tabindex="0" aria-label="перейти в раздел о кандинский">Кандинский</a><img src="img/submenu/avangard-1.png" alt="" class="dropdown__img"></li>
+              <li class="dropdown__item"><a href="#" class="dropdown__link reset-link" tabindex="0" aria-label="перейти в раздел о маринетти">Маринетти</a><img src="img/submenu/avangard-2.png" alt="" class="dropdown__img"></li>
+              <li class="dropdown__item"><a href="#" class="dropdown__link reset-link" tabindex="0" aria-label="перейти в раздел о малевич">Малевич</a><img src="img/submenu/avangard-3.png" alt="" class="dropdown__img"></li>
+              <li class="dropdown__item"><a href="#" class="dropdown__link reset-link" tabindex="0" aria-label="перейти в раздел о Пикассо">Пикассо</a><img src="img/submenu/avangard-4.png" alt="" class="dropdown__img"></li>
             </ul>
           </div>
         </div>
@@ -154,20 +154,20 @@
         <div class="dropdown dropdown_disable">
           <div class="dropdown__simplebar">
             <ul class="reset-list dropdown__list">
-              <li class="dropdown__item"><a href="#" class="dropdown__link reset-link" tabindex="0">Карра</a><picture><source srcset="img/submenu/fut-1.webp" type="image/webp"><img src="img/submenu/fut-1.png" alt="" class="dropdown__img"></picture></li>
-              <li class="dropdown__item"><a href="#" class="dropdown__link reset-link" tabindex="0">Прателла</a><picture><source srcset="img/submenu/fut-2.webp" type="image/webp"><img src="img/submenu/fut-2.png" alt="" class="dropdown__img"></picture></li>
-              <li class="dropdown__item"><a href="#" class="dropdown__link reset-link" tabindex="0">Северини</a><picture><source srcset="img/submenu/fut-3.webp" type="image/webp"><img src="img/submenu/fut-3.png" alt="" class="dropdown__img"></picture></li>
-              <li class="dropdown__item"><a href="#" class="dropdown__link reset-link" tabindex="0">Балла</a><picture><source srcset="img/submenu/fut-4.webp" type="image/webp"><img src="img/submenu/fut-4.png" alt="" class="dropdown__img"></picture></li>
+              <li class="dropdown__item"><a href="#" class="dropdown__link reset-link" tabindex="0" aria-label="перейти в раздел о карра">Карра</a><img src="img/submenu/fut-1.png" alt="" class="dropdown__img"></li>
+              <li class="dropdown__item"><a href="#" class="dropdown__link reset-link" tabindex="0" aria-label="перейти в раздел о прателла">Прателла</a><img src="img/submenu/fut-2.png" alt="" class="dropdown__img"></li>
+              <li class="dropdown__item"><a href="#" class="dropdown__link reset-link" tabindex="0" aria-label="перейти в раздел о северини">Северини</a><img src="img/submenu/fut-3.png" alt="" class="dropdown__img"></li>
+              <li class="dropdown__item"><a href="#" class="dropdown__link reset-link" tabindex="0" aria-label="перейти в раздел о балла">Балла</a><img src="img/submenu/fut-4.png" alt="" class="dropdown__img"></li>
             </ul>
           </div>
         </div>
       </li>
     </ul>
     <form action="#" class="submenu__form">
-      <button class="submenu__form-btn reset-btn">
+      <button class="submenu__form-btn reset-btn" aria-label="начать поиск по сайту">
         <svg class="submenu__form-btn-img"><use xlink:href="img/icons/icons.svg#search"></use></svg>
       </button>
-      <input type="text" placeholder="Поиск по сайту" class="submenu__form-input reset-input">
+      <input type="text" placeholder="Поиск по сайту" class="submenu__form-input reset-input" aria-label="введите запрос">
     </form>
   </div>
 </div>
@@ -238,7 +238,7 @@
       
       <div class="swiper gallery__swiper">
         <div class="swiper-wrapper gallery__swiper-wrapper ">
-          <div class="swiper-slide gallery__swiper-slide" tabindex="0">
+          <div class="swiper-slide gallery__swiper-slide" tabindex="0" aria-label="картина">
             <span class="gallery__swiper-slide-leance">
               <svg class="gallery__swiper-slide-leance-icon"><use xlink:href="img/icons/icons.svg#leance"></use></svg>
             </span>
@@ -250,7 +250,7 @@
             </picture>
           </div>
 
-          <div class="swiper-slide gallery__swiper-slide" tabindex="0">
+          <div class="swiper-slide gallery__swiper-slide" tabindex="0" aria-label="картина">
             <span class="gallery__swiper-slide-leance">
               <svg class="gallery__swiper-slide-leance-icon"><use xlink:href="img/icons/icons.svg#leance"></use></svg>
             </span>
@@ -262,7 +262,7 @@
             </picture>
           </div>
 
-          <div class="swiper-slide gallery__swiper-slide" tabindex="0">
+          <div class="swiper-slide gallery__swiper-slide" tabindex="0" aria-label="картина">
             <span class="gallery__swiper-slide-leance">
               <svg class="gallery__swiper-slide-leance-icon"><use xlink:href="img/icons/icons.svg#leance"></use></svg>
             </span>
@@ -274,7 +274,7 @@
             </picture>
           </div>
 
-          <div class="swiper-slide gallery__swiper-slide" tabindex="0">
+          <div class="swiper-slide gallery__swiper-slide" tabindex="0" aria-label="картина">
             <span class="gallery__swiper-slide-leance">
               <svg class="gallery__swiper-slide-leance-icon"><use xlink:href="img/icons/icons.svg#leance"></use></svg>
             </span>
@@ -286,7 +286,7 @@
             </picture>
           </div>
 
-          <div class="swiper-slide gallery__swiper-slide" tabindex="0">
+          <div class="swiper-slide gallery__swiper-slide" tabindex="0" aria-label="картина">
             <span class="gallery__swiper-slide-leance">
               <svg class="gallery__swiper-slide-leance-icon"><use xlink:href="img/icons/icons.svg#leance"></use></svg>
             </span>
@@ -298,7 +298,7 @@
             </picture>
           </div>
 
-          <div class="swiper-slide gallery__swiper-slide" tabindex="0">
+          <div class="swiper-slide gallery__swiper-slide" tabindex="0" aria-label="картина">
             <span class="gallery__swiper-slide-leance">
               <svg class="gallery__swiper-slide-leance-icon"><use xlink:href="img/icons/icons.svg#leance"></use></svg>
             </span>
@@ -331,7 +331,7 @@
     <div class="accordion-tabs">
       <div class="tabs">
         <div class="tabs__item" data-target="tab-1">
-          <picture><source srcset="img/catalogue/tab-img-1.webp" type="image/webp"><img src="img/catalogue/tab-img-1.jpg" alt="Бенедетто ди Биндо" class="tabs__img"></picture>
+          <img src="img/catalogue/tab-img-1.jpg" alt="Бенедетто ди Биндо" class="tabs__img">
           <h3 class="tabs__item-tittle">Бенедетто ди Биндо</h3>
           <span class="tabs__item-years">около 1385&ndash;1417</span>
           <p class="tabs__item-text">
@@ -340,7 +340,7 @@
           </p>
         </div>
         <div class="tabs__item" data-target="tab-2">
-          <picture><source srcset="img/catalogue/tab-img-2.webp" type="image/webp"><img src="img/catalogue/tab-img-2.jpg" alt="Бергоньоне, Амброджо" class="tabs__img"></picture>
+          <img src="img/catalogue/tab-img-2.jpg" alt="Бергоньоне, Амброджо" class="tabs__img">
           <h3 class="tabs__item-tittle">Бергоньоне, Амброджо</h3>
           <span class="tabs__item-years">1453, Фоссано, провинция Кунео&nbsp;&mdash; 1523, Милан</span>
           <p class="tabs__item-text">
@@ -350,7 +350,7 @@
           </p>
         </div>
         <div class="tabs__item" data-target="tab-3">
-          <picture><source srcset="img/catalogue/tab-img-3.webp" type="image/webp"><img src="img/catalogue/tab-img-3.jpg" alt="Биссоло, Франческо" class="tabs__img"></picture>
+          <img src="img/catalogue/tab-img-3.jpg" alt="Биссоло, Франческо" class="tabs__img">
           <h3 class="tabs__item-tittle">Биссоло, Франческо</h3>
           <span class="tabs__item-years">итал. Francesco Bissolo; 1470 или 1472, Тревизо&nbsp;&mdash; 20&nbsp;апреля
             1554, Венеция</span>
@@ -370,7 +370,7 @@
           </p>
         </div>
         <div class="tabs__item" data-target="tab-4">
-          <picture><source srcset="img/catalogue/tab-img-4.webp" type="image/webp"><img src="img/catalogue/tab-img-4.jpg" alt="Больтраффио, Джованни" class="tabs__img"></picture>
+          <img src="img/catalogue/tab-img-4.jpg" alt="Больтраффио, Джованни" class="tabs__img">
           <h3 class="tabs__item-tittle">Больтраффио, Джованни</h3>
           <span class="tabs__item-years">итал. Giovanni Antonio Boltraffio (Beltraffio)[9]; 1466 или 1467, Милан&nbsp;&mdash; 1516, там&nbsp;же</span>
           <p class="tabs__item-text">
@@ -382,7 +382,7 @@
           </p>
         </div>
         <div class="tabs__item" data-target="tab-5">
-          <picture><source srcset="img/catalogue/tab-img-5.webp" type="image/webp"><img src="img/catalogue/tab-img-5.jpg" alt="Бонсиньори, Франческо" class="tabs__img"></picture>
+          <img src="img/catalogue/tab-img-5.jpg" alt="Бонсиньори, Франческо" class="tabs__img">
           <h3 class="tabs__item-tittle">Бонсиньори, Франческо</h3>
           <span class="tabs__item-years">Francesco Bonsignori; ок.&nbsp;1460, Верона, Венецианская республика&nbsp;&mdash; 2&nbsp;июля 1519, Кальдьеро, Венецианская республика</span>
           <p class="tabs__item-text">
@@ -398,7 +398,7 @@
           </p>
         </div>
         <div class="tabs__item" data-target="tab-6">
-          <picture><source srcset="img/catalogue/tab-img-6.webp" type="image/webp"><img src="img/catalogue/tab-img-6.jpg" alt="Боттичини, Рафаэлло" class="tabs__img"></picture>
+          <img src="img/catalogue/tab-img-6.jpg" alt="Боттичини, Рафаэлло" class="tabs__img">
           <h3 class="tabs__item-tittle">Боттичини, Рафаэлло</h3>
           <span class="tabs__item-years">итал. Raffaello di&nbsp;Francesco Botticini; 11&nbsp;сентября 1477, Флоренция&nbsp;&mdash; известен до&nbsp;1520 года</span>
           <p class="tabs__item-text">
@@ -414,7 +414,7 @@
           </p>
         </div>
         <div class="tabs__item" data-target="tab-7">
-          <picture><source srcset="img/catalogue/empty-artist.webp" type="image/webp"><img src="img/catalogue/empty-artist.jpg" alt="empty artist" class="tabs__img"></picture>
+          <img src="img/catalogue/empty-artist.jpg" alt="empty artist" class="tabs__img">
           <h3 class="tabs__item-tittle">Что мы о нём знаем?</h3>
           <span class="tabs__item-years"></span>
           <p class="tabs__item-text">
@@ -423,7 +423,7 @@
           <a href="#gallery" class="tabs__item-link reset-link">В галерею</a>
         </div>
         <div class="tabs__item" data-target="tab-8">
-          <picture><source srcset="img/catalogue/empty-artist.webp" type="image/webp"><img src="img/catalogue/empty-artist.jpg" alt="empty artist" class="tabs__img"></picture>
+          <img src="img/catalogue/empty-artist.jpg" alt="empty artist" class="tabs__img">
           <h3 class="tabs__item-tittle">Что мы о нём знаем?</h3>
           <span class="tabs__item-years"></span>
           <p class="tabs__item-text">
@@ -432,7 +432,7 @@
           <a href="#gallery" class="tabs__item-link reset-link">В галерею</a>
         </div>
         <div class="tabs__item" data-target="tab-9">
-          <picture><source srcset="img/catalogue/empty-artist.webp" type="image/webp"><img src="img/catalogue/empty-artist.jpg" alt="empty artist" class="tabs__img"></picture>
+          <img src="img/catalogue/empty-artist.jpg" alt="empty artist" class="tabs__img">
           <h3 class="tabs__item-tittle">Что мы о нём знаем?</h3>
           <span class="tabs__item-years"></span>
           <p class="tabs__item-text">
@@ -441,7 +441,7 @@
           <a href="#gallery" class="tabs__item-link reset-link">В галерею</a>
         </div>
         <div class="tabs__item" data-target="tab-10">
-          <picture><source srcset="img/catalogue/empty-artist.webp" type="image/webp"><img src="img/catalogue/empty-artist.jpg" alt="empty artist" class="tabs__img"></picture>
+          <img src="img/catalogue/empty-artist.jpg" alt="empty artist" class="tabs__img">
           <h3 class="tabs__item-tittle">Что мы о нём знаем?</h3>
           <span class="tabs__item-years"></span>
           <p class="tabs__item-text">
@@ -450,7 +450,7 @@
           <a href="#gallery" class="tabs__item-link reset-link">В галерею</a>
         </div>
         <div class="tabs__item" data-target="tab-11">
-          <picture><source srcset="img/catalogue/empty-artist.webp" type="image/webp"><img src="img/catalogue/empty-artist.jpg" alt="empty artist" class="tabs__img"></picture>
+          <img src="img/catalogue/empty-artist.jpg" alt="empty artist" class="tabs__img">
           <h3 class="tabs__item-tittle">Что мы о нём знаем?</h3>
           <span class="tabs__item-years"></span>
           <p class="tabs__item-text">
@@ -460,7 +460,7 @@
         </div>
         
         <div class="tabs__item tabs__item--active" data-target="tab-12">
-          <picture><source srcset="img/catalogue/tab-img-12.webp" type="image/webp"><img src="img/catalogue/tab-img-12.jpg" alt="Доменико Гирландайо" class="tabs__img"></picture>
+          <img src="img/catalogue/tab-img-12.jpg" alt="Доменико Гирландайо" class="tabs__img">
           <h3 class="tabs__item-tittle">Доменико Гирландайо</h3>
           <span class="tabs__item-years">2&nbsp;июня 1448&ndash;11 января 1494</span>
           <p class="tabs__item-text">
@@ -472,7 +472,7 @@
           </p>
         </div>
         <div class="tabs__item" data-target="tab-13">
-          <picture><source srcset="img/catalogue/empty-artist.webp" type="image/webp"><img src="img/catalogue/empty-artist.jpg" alt="empty artist" class="tabs__img"></picture>
+          <img src="img/catalogue/empty-artist.jpg" alt="empty artist" class="tabs__img">
           <h3 class="tabs__item-tittle">Что мы о нём знаем?</h3>
           <span class="tabs__item-years"></span>
           <p class="tabs__item-text">
@@ -481,7 +481,7 @@
           <a href="#gallery" class="tabs__item-link reset-link">В галерею</a>
         </div>
         <div class="tabs__item" data-target="tab-14">
-          <picture><source srcset="img/catalogue/empty-artist.webp" type="image/webp"><img src="img/catalogue/empty-artist.jpg" alt="empty artist" class="tabs__img"></picture>
+          <img src="img/catalogue/empty-artist.jpg" alt="empty artist" class="tabs__img">
           <h3 class="tabs__item-tittle">Что мы о нём знаем?</h3>
           <span class="tabs__item-years"></span>
           <p class="tabs__item-text">
@@ -490,7 +490,7 @@
           <a href="#gallery" class="tabs__item-link reset-link">В галерею</a>
         </div>
         <div class="tabs__item" data-target="tab-15">
-          <picture><source srcset="img/catalogue/empty-artist.webp" type="image/webp"><img src="img/catalogue/empty-artist.jpg" alt="empty artist" class="tabs__img"></picture>
+          <img src="img/catalogue/empty-artist.jpg" alt="empty artist" class="tabs__img">
           <h3 class="tabs__item-tittle">Что мы о нём знаем?</h3>
           <span class="tabs__item-years"></span>
           <p class="tabs__item-text">
@@ -499,7 +499,7 @@
           <a href="#gallery" class="tabs__item-link reset-link">В галерею</a>
         </div>
         <div class="tabs__item" data-target="tab-16">
-          <picture><source srcset="img/catalogue/empty-artist.webp" type="image/webp"><img src="img/catalogue/empty-artist.jpg" alt="empty artist" class="tabs__img"></picture>
+          <img src="img/catalogue/empty-artist.jpg" alt="empty artist" class="tabs__img">
           <h3 class="tabs__item-tittle">Что мы о нём знаем?</h3>
           <span class="tabs__item-years"></span>
           <p class="tabs__item-text">
@@ -508,7 +508,7 @@
           <a href="#gallery" class="tabs__item-link reset-link">В галерею</a>
         </div>
         <div class="tabs__item" data-target="tab-17">
-          <picture><source srcset="img/catalogue/empty-artist.webp" type="image/webp"><img src="img/catalogue/empty-artist.jpg" alt="empty artist" class="tabs__img"></picture>
+          <img src="img/catalogue/empty-artist.jpg" alt="empty artist" class="tabs__img">
           <h3 class="tabs__item-tittle">Что мы о нём знаем?</h3>
           <span class="tabs__item-years"></span>
           <p class="tabs__item-text">
@@ -517,7 +517,7 @@
           <a href="#gallery" class="tabs__item-link reset-link">В галерею</a>
         </div>
         <div class="tabs__item" data-target="tab-18">
-          <picture><source srcset="img/catalogue/empty-artist.webp" type="image/webp"><img src="img/catalogue/empty-artist.jpg" alt="empty artist" class="tabs__img"></picture>
+          <img src="img/catalogue/empty-artist.jpg" alt="empty artist" class="tabs__img">
           <h3 class="tabs__item-tittle">Что мы о нём знаем?</h3>
           <span class="tabs__item-years"></span>
           <p class="tabs__item-text">
@@ -526,7 +526,7 @@
           <a href="#gallery" class="tabs__item-link reset-link">В галерею</a>
         </div>
         <div class="tabs__item" data-target="tab-19">
-          <picture><source srcset="img/catalogue/empty-artist.webp" type="image/webp"><img src="img/catalogue/empty-artist.jpg" alt="empty artist" class="tabs__img"></picture>
+          <img src="img/catalogue/empty-artist.jpg" alt="empty artist" class="tabs__img">
           <h3 class="tabs__item-tittle">Что мы о нём знаем?</h3>
           <span class="tabs__item-years"></span>
           <p class="tabs__item-text">
@@ -535,7 +535,7 @@
           <a href="#gallery" class="tabs__item-link reset-link">В галерею</a>
         </div>
         <div class="tabs__item" data-target="tab-20">
-          <picture><source srcset="img/catalogue/empty-artist.webp" type="image/webp"><img src="img/catalogue/empty-artist.jpg" alt="empty artist" class="tabs__img"></picture>
+          <img src="img/catalogue/empty-artist.jpg" alt="empty artist" class="tabs__img">
           <h3 class="tabs__item-tittle">Что мы о нём знаем?</h3>
           <span class="tabs__item-years"></span>
           <p class="tabs__item-text">
@@ -544,7 +544,7 @@
           <a href="#gallery" class="tabs__item-link reset-link">В галерею</a>
         </div>
         <div class="tabs__item" data-target="tab-21">
-          <picture><source srcset="img/catalogue/empty-artist.webp" type="image/webp"><img src="img/catalogue/empty-artist.jpg" alt="empty artist" class="tabs__img"></picture>
+          <img src="img/catalogue/empty-artist.jpg" alt="empty artist" class="tabs__img">
           <h3 class="tabs__item-tittle">Что мы о нём знаем?</h3>
           <span class="tabs__item-years"></span>
           <p class="tabs__item-text">
@@ -553,7 +553,7 @@
           <a href="#gallery" class="tabs__item-link reset-link">В галерею</a>
         </div>
         <div class="tabs__item" data-target="tab-22">
-          <picture><source srcset="img/catalogue/empty-artist.webp" type="image/webp"><img src="img/catalogue/empty-artist.jpg" alt="empty artist" class="tabs__img"></picture>
+          <img src="img/catalogue/empty-artist.jpg" alt="empty artist" class="tabs__img">
           <h3 class="tabs__item-tittle">Что мы о нём знаем?</h3>
           <span class="tabs__item-years"></span>
           <p class="tabs__item-text">
@@ -562,7 +562,7 @@
           <a href="#gallery" class="tabs__item-link reset-link">В галерею</a>
         </div>
         <div class="tabs__item" data-target="tab-23">
-          <picture><source srcset="img/catalogue/empty-artist.webp" type="image/webp"><img src="img/catalogue/empty-artist.jpg" alt="empty artist" class="tabs__img"></picture>
+          <img src="img/catalogue/empty-artist.jpg" alt="empty artist" class="tabs__img">
           <h3 class="tabs__item-tittle">Что мы о нём знаем?</h3>
           <span class="tabs__item-years"></span>
           <p class="tabs__item-text">
@@ -571,7 +571,7 @@
           <a href="#gallery" class="tabs__item-link reset-link">В галерею</a>
         </div>
         <div class="tabs__item" data-target="tab-24">
-          <picture><source srcset="img/catalogue/empty-artist.webp" type="image/webp"><img src="img/catalogue/empty-artist.jpg" alt="empty artist" class="tabs__img"></picture>
+          <img src="img/catalogue/empty-artist.jpg" alt="empty artist" class="tabs__img">
           <h3 class="tabs__item-tittle">Что мы о нём знаем?</h3>
           <span class="tabs__item-years"></span>
           <p class="tabs__item-text">
@@ -997,56 +997,56 @@
     <div class="projects__partners-swiper-wrapper">
       <div class="swiper projects__swiper">
         <div class="swiper-wrapper projects__swiper-wrapper">
-          <div class="swiper-slide projects__swiper-slide" tabindex="0">
+          <div class="swiper-slide projects__swiper-slide" tabindex="0" aria-label="партнер проекта">
             <picture>
               <source srcset="img/partners/partner-img-1-768.png" media="(max-width:767px)">
               <source srcset="img/partners/partner-img-1-1024.png" media="(max-width:1390px)">
               <img src="img/partners/partner-img-1.png" class="projects__swiper-slide-img" alt="partner-1">
             </picture>
           </div>
-          <div class="swiper-slide projects__swiper-slide" tabindex="0">
+          <div class="swiper-slide projects__swiper-slide" tabindex="0" aria-label="партнер проекта">
             <picture>
               <source srcset="img/partners/partner-img-2-768.png" media="(max-width:767px)">
               <source srcset="img/partners/partner-img-2-1024.png" media="(max-width:1390px)">
               <img src="img/partners/partner-img-2.png" class="projects__swiper-slide-img" alt="partner-img-2">
             </picture>
           </div>
-          <div class="swiper-slide projects__swiper-slide" tabindex="0">
+          <div class="swiper-slide projects__swiper-slide" tabindex="0" aria-label="партнер проекта">
             <picture>
               <source srcset="img/partners/partner-img-3-768.png" media="(max-width:767px)">
               <source srcset="img/partners/partner-img-3-1024.png" media="(max-width:1390px)">
               <img src="img/partners/partner-img-3.png" class="projects__swiper-slide-img" alt="partner-3">
             </picture>
           </div>
-          <div class="swiper-slide projects__swiper-slide" tabindex="0">
+          <div class="swiper-slide projects__swiper-slide" tabindex="0" aria-label="партнер проекта">
             <picture>
               <source srcset="img/partners/partner-img-4-768.png" media="(max-width:767px)">
               <source srcset="img/partners/partner-img-4-1024.png" media="(max-width:1390px)">
               <img src="img/partners/partner-img-4.png" class="projects__swiper-slide-img" alt="partner-4">
             </picture>
           </div>
-          <div class="swiper-slide projects__swiper-slide" tabindex="0">
+          <div class="swiper-slide projects__swiper-slide" tabindex="0" aria-label="партнер проекта">
             <picture>
               <source srcset="img/partners/partner-img-5-768.png" media="(max-width:767px)">
               <source srcset="img/partners/partner-img-5-1024.png" media="(max-width:1390px)">
               <img src="img/partners/partner-img-5.png" class="projects__swiper-slide-img" alt="partner-5">
             </picture>
           </div>
-          <div class="swiper-slide projects__swiper-slide" tabindex="0">
+          <div class="swiper-slide projects__swiper-slide" tabindex="0" aria-label="партнер проекта">
             <picture>
               <source srcset="img/partners/partner-img-6-768.png" media="(max-width:767px)">
               <source srcset="img/partners/partner-img-6-1024.png" media="(max-width:1390px)">
               <img src="img/partners/partner-img-6.png" class="projects__swiper-slide-img" alt="partner-6">
             </picture>
           </div>
-          <div class="swiper-slide projects__swiper-slide" tabindex="0">
+          <div class="swiper-slide projects__swiper-slide" tabindex="0" aria-label="партнер проекта">
             <picture>
               <source srcset="img/partners/partner-img-7-768.png" media="(max-width:767px)">
               <source srcset="img/partners/partner-img-7-1024.png" media="(max-width:1390px)">
               <img src="img/partners/partner-img-7.png" class="projects__swiper-slide-img" alt="partner-7">
             </picture>
           </div>
-          <div class="swiper-slide projects__swiper-slide" tabindex="0">
+          <div class="swiper-slide projects__swiper-slide" tabindex="0" aria-label="партнер проекта">
             <picture>
               <source srcset="img/partners/partner-img-8-768.png" media="(max-width:767px)">
               <source srcset="img/partners/partner-img-8-1024.png" media="(max-width:1390px)">
@@ -1054,7 +1054,7 @@
             </picture>
           </div>
 
-          <div class="swiper-slide projects__swiper-slide" tabindex="0">
+          <div class="swiper-slide projects__swiper-slide" tabindex="0" aria-label="партнер проекта">
             <picture>
               <source srcset="img/partners/partner-img-9-768.png" media="(max-width:767px)">
               <source srcset="img/partners/partner-img-9-1024.png" media="(max-width:1390px)">
@@ -1118,7 +1118,7 @@
     </main>
     <footer class="footer">
   <div class="container footer__container">
-    <a href="#" class="footer__logo">
+    <a href="#" class="footer__logo" aria-label="перейти на главную">
       <picture>
         <source media="(max-width:767px)" srcset="img/logo-320.png">
         <source media="(max-width:1390px)" srcset="img/logo-1024.png">
@@ -1132,5 +1132,5 @@
   </div>
 </footer>
   </body>
-  <script src="js/app.min.js?_v=20221226100551"></script>
+  <script src="js/app.min.js"></script>
 </html>
